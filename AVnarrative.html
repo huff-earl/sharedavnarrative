@@ -100,7 +100,23 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="AVnarrative" startnode="1" creator="Twine" creator-version="2.3.9" ifid="0E7CDAA8-0B80-4F60-A680-B8F17C16535A" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*!
+	<tw-storydata name="AVnarrative" startnode="1" creator="Twine" creator-version="2.3.9" ifid="0E7CDAA8-0B80-4F60-A680-B8F17C16535A" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body
+{
+  font-size:200% !important;
+}
+input[type=checkbox], input[type=radio] {
+
+    padding: 0;
+  height: 1.5em !important;
+  width:5% !important;
+}
+label
+{
+	font-size:100% !important;
+  color: #ffffff !important;
+}
+
+/*!
  * Materialize v1.0.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
@@ -131,100 +147,32 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
  transform .3s,
  visibility 0s,
  -webkit-transform .3s;z-index:-1}.tap-target-origin{top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);z-index:10002;position:absolute !important}.tap-target-origin:not(.btn):not(.btn-large):not(.btn-small),.tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):hover{background:none}@media only screen and (max-width: 600px){.tap-target,.tap-target-wrapper{width:600px;height:600px}}.pulse{overflow:visible;position:relative}.pulse::before{content:'';display:block;position:absolute;width:100%;height:100%;top:0;left:0;background-color:inherit;border-radius:inherit;-webkit-transition:opacity .3s, -webkit-transform .3s;transition:opacity .3s, -webkit-transform .3s;transition:opacity .3s, transform .3s;transition:opacity .3s, transform .3s, -webkit-transform .3s;-webkit-animation:pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;animation:pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;z-index:-1}@-webkit-keyframes pulse-animation{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}50%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}100%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}}@keyframes pulse-animation{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}50%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}100%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}}.datepicker-modal{max-width:325px;min-width:300px;max-height:none}.datepicker-container.modal-content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0}.datepicker-controls{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:280px;margin:0 auto}.datepicker-controls .selects-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.datepicker-controls .select-wrapper input{border-bottom:none;text-align:center;margin:0}.datepicker-controls .select-wrapper input:focus{border-bottom:none}.datepicker-controls .select-wrapper .caret{display:none}.datepicker-controls .select-year input{width:50px}.datepicker-controls .select-month input{width:70px}.month-prev,.month-next{margin-top:4px;cursor:pointer;background-color:transparent;border:none}.datepicker-date-display{-webkit-box-flex:1;-webkit-flex:1 auto;-ms-flex:1 auto;flex:1 auto;background-color:#26a69a;color:#fff;padding:20px 22px;font-weight:500}.datepicker-date-display .year-text{display:block;font-size:1.5rem;line-height:25px;color:rgba(255,255,255,0.7)}.datepicker-date-display .date-text{display:block;font-size:2.8rem;line-height:47px;font-weight:500}.datepicker-calendar-container{-webkit-box-flex:2.5;-webkit-flex:2.5 auto;-ms-flex:2.5 auto;flex:2.5 auto}.datepicker-table{width:280px;font-size:1rem;margin:0 auto}.datepicker-table thead{border-bottom:none}.datepicker-table th{padding:10px 5px;text-align:center}.datepicker-table tr{border:none}.datepicker-table abbr{text-decoration:none;color:#999}.datepicker-table td{border-radius:50%;padding:0}.datepicker-table td.is-today{color:#26a69a}.datepicker-table td.is-selected{background-color:#26a69a;color:#fff}.datepicker-table td.is-outside-current-month,.datepicker-table td.is-disabled{color:rgba(0,0,0,0.3);pointer-events:none}.datepicker-day-button{background-color:transparent;border:none;line-height:38px;display:block;width:100%;border-radius:50%;padding:0 5px;cursor:pointer;color:inherit}.datepicker-day-button:focus{background-color:rgba(43,161,150,0.25)}.datepicker-footer{width:280px;margin:0 auto;padding-bottom:5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.datepicker-cancel,.datepicker-clear,.datepicker-today,.datepicker-done{color:#26a69a;padding:0 1rem}.datepicker-clear{color:#F44336}@media only screen and (min-width: 601px){.datepicker-modal{max-width:625px}.datepicker-container.modal-content{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}.datepicker-date-display{-webkit-box-flex:0;-webkit-flex:0 1 270px;-ms-flex:0 1 270px;flex:0 1 270px}.datepicker-controls,.datepicker-table,.datepicker-footer{width:320px}.datepicker-day-button{line-height:44px}}.timepicker-modal{max-width:325px;max-height:none}.timepicker-container.modal-content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0}.text-primary{color:#fff}.timepicker-digital-display{-webkit-box-flex:1;-webkit-flex:1 auto;-ms-flex:1 auto;flex:1 auto;background-color:#26a69a;padding:10px;font-weight:300}.timepicker-text-container{font-size:4rem;font-weight:bold;text-align:center;color:rgba(255,255,255,0.6);font-weight:400;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.timepicker-span-hours,.timepicker-span-minutes,.timepicker-span-am-pm div{cursor:pointer}.timepicker-span-hours{margin-right:3px}.timepicker-span-minutes{margin-left:3px}.timepicker-display-am-pm{font-size:1.3rem;position:absolute;right:1rem;bottom:1rem;font-weight:400}.timepicker-analog-display{-webkit-box-flex:2.5;-webkit-flex:2.5 auto;-ms-flex:2.5 auto;flex:2.5 auto}.timepicker-plate{background-color:#eee;border-radius:50%;width:270px;height:270px;overflow:visible;position:relative;margin:auto;margin-top:25px;margin-bottom:5px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.timepicker-canvas,.timepicker-dial{position:absolute;left:0;right:0;top:0;bottom:0}.timepicker-minutes{visibility:hidden}.timepicker-tick{border-radius:50%;color:rgba(0,0,0,0.87);line-height:40px;text-align:center;width:40px;height:40px;position:absolute;cursor:pointer;font-size:15px}.timepicker-tick.active,.timepicker-tick:hover{background-color:rgba(38,166,154,0.25)}.timepicker-dial{-webkit-transition:opacity 350ms, -webkit-transform 350ms;transition:opacity 350ms, -webkit-transform 350ms;transition:transform 350ms, opacity 350ms;transition:transform 350ms, opacity 350ms, -webkit-transform 350ms}.timepicker-dial-out{opacity:0}.timepicker-dial-out.timepicker-hours{-webkit-transform:scale(1.1, 1.1);transform:scale(1.1, 1.1)}.timepicker-dial-out.timepicker-minutes{-webkit-transform:scale(0.8, 0.8);transform:scale(0.8, 0.8)}.timepicker-canvas{-webkit-transition:opacity 175ms;transition:opacity 175ms}.timepicker-canvas line{stroke:#26a69a;stroke-width:4;stroke-linecap:round}.timepicker-canvas-out{opacity:0.25}.timepicker-canvas-bearing{stroke:none;fill:#26a69a}.timepicker-canvas-bg{stroke:none;fill:#26a69a}.timepicker-footer{margin:0 auto;padding:5px 1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.timepicker-clear{color:#F44336}.timepicker-close{color:#26a69a}.timepicker-clear,.timepicker-close{padding:0 20px}@media only screen and (min-width: 601px){.timepicker-modal{max-width:600px}.timepicker-container.modal-content{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}.timepicker-text-container{top:32%}.timepicker-display-am-pm{position:relative;right:auto;bottom:auto;text-align:center;margin-top:1.2rem}}
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Autonomous Vehicle" tags="" position="400,200" size="100,100">&lt;h2&gt;What is an autonomous vehicle?&lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;An autonomous vehicle is a type of vehicle that doesn’t require a person behind the wheel. These types of vehicles are also referred to as self-driving cars. Apparently, they can drive on their own, are smart enough to know when to stop at a red light, pass other cars safely, and watch out for pedestrians. People who are unable to drive themselves have begun discussing the possibility of buying one of these vehicles for themselves. An important feature of these vehicles is that you can go anywhere without having to be driven by someone else. All you have to do is get into the vehicle, tell it where you want to go, and it takes you to your destination. 
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Autonomous Vehicle" tags="" position="1183,215" size="100,100">&lt;h1&gt;What is an autonomous vehicle?&lt;/h1&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;An autonomous vehicle is a type of vehicle that doesn’t require a person behind the wheel. These types of vehicles are also referred to as self-driving cars. They can drive on their own, are smart enough to know when to stop at a red light, pass other cars safely, and watch out for pedestrians. People who are unable to drive themselves have begun discussing the possibility of buying one of these vehicles for themselves. An important feature of these vehicles is that you can go anywhere without having to be driven by someone else. All you have to do is get into the vehicle, tell it where you want to go, and it takes you to your destination. 
 &lt;/p&gt;
 
-[[Next Page|Ride Easy Intro]]</tw-passagedata><tw-passagedata pid="2" name="Ride Easy Intro" tags="" position="400,350" size="100,100">&lt;h2&gt;Introduction to RideEasy&lt;/h2&gt;
+[[Next Page|Ride Easy Intro]]</tw-passagedata><tw-passagedata pid="2" name="Ride Easy Intro" tags="" position="1185,363" size="100,100">&lt;h1&gt;Introduction to RideEasy&lt;/h1&gt;
 
-&lt;p style=&quot;text-align: justify;&quot;&gt;RideEasy, a new company in South Carolina, just announced the launch of a new ride-sharing service using self-driving vehicles. This new service works much like Uber and Lyft: you place a request for a ride through their smartphone app, schedule your ride, enter your starting and end destinations, and it will come to pick you up and take you where you want to go. The company provides assurance that it is usable by anyone, that includes even people who have varying forms of disabilities.
+&lt;p style=&quot;text-align: justify;&quot;&gt;RideEasy, a new company in South Carolina, just announced the launch of a new ride-sharing service using self-driving vehicles. This new service works much like Uber and Lyft: you place a request for a ride through their smartphone app, schedule your ride, enter your starting and end destinations, and it will come to pick you up and take you where you want to go. The company provides assurance that it is usable by anyone, including people who have varying forms of disabilities.
 &lt;/p&gt;
 
-[[Download RideEasy App|Sign up using app]] 
-[[Open the RideEasy Website|Sign up using web]]</tw-passagedata><tw-passagedata pid="3" name="RideEasy Home App" tags="" position="400,475" size="100,100">&lt;h2&gt; Accessing the mobile application&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;
-	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_homescreen.png&quot; alt=&quot;A smartphone displaying the homescreen of the Ride Easy mobile application, including the logo and a button to continue to the next page.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; You find RideEasy on the App Store of your mobile phone and install it. You open the app and come to the main screen. If you have screen reader enabled, the screen reader announces that it has the name of the app at the top, a logo in the middle, and the words “Welcome to autonomous rides on-demand” underneath. Your instructed to swipe to continue. You swipe to the next screen which is titled ‘Our Values’. It lists the three core values of the RideEasy company. First, safety… we use cutting edge safety technology to protect you and your loved ones. Second, reliability... we tirelessly improve our vehicles to make sure you consistently get where you need to go. And finally, freedom… we’ll take the wheel, but you’re in control. Change your destination, stop your ride, or pick up a friend at the push of a button.
+The first step of the process would be to create an account in order to sign in to the application.
 
-You swipe over to the next screen called  ‘How it works’ which lists the initial steps you need to complete to set up the application.  First, it says to “Set up your account,” then “Order a ride,” next “Travel to your destination,” and finally, “Rate your experience.”
+Select an application to create your account and signin.
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ChoiceforSignUp&quot; &quot;Mobile App&quot;&gt;&gt; Mobile Application &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ChoiceforSignUp&quot; &quot;Web App&quot;&gt;&gt; Website &lt;/label&gt;
 
-	  
-	  [[Next|Setup Account]]
-	  &lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
+Please explain the reason behind your application selection for account creation.
+
+&lt;&lt;textbox &quot;$ReasonForChoiceOfSignUp&quot; &quot;&quot;&gt;&gt;
+
+If you prefer using a mobile application to book your self-driving ridesharing vehicle using RideEasy click below:
+[[Take me to the RideEasy App|Selected Application][$ChoiceForRideBooking to &quot;Mobile App&quot;]]
 
 
-
-
-</tw-passagedata><tw-passagedata pid="4" name="Setup Account" tags="" position="400,623" size="100,100">&lt;head&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css&quot;&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_name.png&quot; alt=&quot;A smartphone displaying the first page of account setup. In the middle of the screen there is a textbox that allows you to enter your name. The bottom of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; You swipe to the next screen where you can create your profile, and you’re informed that you can set up your account in six easy steps. The account creation process begins by inquiring, “What’s your name?” 
-
-What is your name? &lt;&lt;textbox &quot;$name&quot; &quot;&quot;&gt;&gt;
-
-After entering your Full Name into the text box Click the Next Button.
-	  
-	  [[Next|Email Address]]
-	  
-	  &lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-
-
-
-
-</tw-passagedata><tw-passagedata pid="5" name="Email Address" tags="" position="400,773" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_email.png&quot; alt=&quot;A smartphone displaying the second page of account setup. In the middle of the screen there is a textbox that allows you to enter your email address. The bottom of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next step requests you to enter your email address. Once Again, there is a text box for you to fill in.
-
-What is your Email Address? &lt;&lt;textbox &quot;$email&quot; &quot;&quot;&gt;&gt;
-
-After entering your Email into the text box Click the Next Button.
-
-	  
-	  [[Next|Emergency Contact]]
-	  
-	  &lt;/p&gt;
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Emergency Contact" tags="" position="400,925" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_emergency.png&quot; alt=&quot;A smartphone displaying the third page of account setup. In the middle of the screen there is a textbox that allows you to enter your emergency contact. The bottom of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; This screen requests you to enter information for an emergency contact. This step is important to RideEasy as it considers the fact that you will be driving without anyone else, and the company believes in being prepared for all kinds of emergencies. There are multiple text boxes for you to fill in where you can enter your emergency contacts Full Name, address, and phone number.
-&lt;/p&gt;
-
-What is your Emergency Contacts Full Name? &lt;&lt;textbox &quot;$ECname&quot; &quot;&quot;&gt;&gt;
-What is your Emergency Contacts Email? &lt;&lt;textbox &quot;$ECemail&quot; &quot;&quot;&gt;&gt;
-What is your Emergency Contacts Phone Number? &lt;&lt;textbox &quot;$ECnumber&quot; &quot;&quot;&gt;&gt;
-
-After entering details of your emergency contact into the text boxes Click the ‘Next’ button.
-
-	  [[Next|Favorite Place]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;
-	 
-	  </tw-passagedata><tw-passagedata pid="7" name="Variable Store" tags="" position="1500,900" size="100,100">Users Name: &lt;&lt;print $name&gt;&gt;
+If you prefer using a Website to book your self-driving ridesharing vehicle using RideEasy click below:
+[[Take me to the RideEasy Website|Selected Web][$ChoiceForRideBooking to &quot;Web App&quot;]]
+</tw-passagedata><tw-passagedata pid="3" name="Variable Store" tags="" position="1861,898" size="100,100">Users Name: &lt;&lt;print $name&gt;&gt;
 Email: &lt;&lt;print $email&gt;&gt;
 
 Emergency Contacts Name: &lt;&lt;print $ECname&gt;&gt;
@@ -245,7 +193,7 @@ TextSize: &lt;&lt;print $TextSize&gt;&gt;
 VisualImpairedAssist: &lt;&lt;print $VisualImpairedAssist&gt;&gt;
 VoiceControl: &lt;&lt;print $VoiceControl&gt;&gt;
 Volume: &lt;&lt;print $Volume&gt;&gt;
-favorite: &lt;&lt;print $favorite&gt;&gt;
+favorite place: &lt;&lt;print $favoriteplace&gt;&gt;
 subtitles: &lt;&lt;print $subtitles&gt;&gt;
 
 Name of Stop: &lt;&lt;print $stop&gt;&gt;
@@ -308,8 +256,7 @@ Employment Retired: &lt;&lt;print $retired&gt;&gt;
 Employment Student: &lt;&lt;print $student&gt;&gt;
 Employment Disabled: &lt;&lt;print $disabled&gt;&gt;
 
-Visual Impairment Yes: &lt;&lt;print $VIyes&gt;&gt;
-Visual Impairment No: &lt;&lt;print $VIno&gt;&gt;
+Disability Status: &lt;&lt;print $disability
 
 Low Vision Yes: &lt;&lt;print $LVyes&gt;&gt;
 Low Vision No: &lt;&lt;print $LVno&gt;&gt;
@@ -320,6 +267,7 @@ Blind No: &lt;&lt;print $Bno&gt;&gt;
 Acuity: &lt;&lt;print $visualacuity&gt;&gt;
 
 Impairment Hearing: &lt;&lt;print $HearingI&gt;&gt;
+Impairment Visual: &lt;&lt;print $VisualI&gt;&gt;
 Impairment Speech: &lt;&lt;print $SpeechI&gt;&gt;
 Impairment Mobility: &lt;&lt;print $MobilityI&gt;&gt;
 Impairment Cognitive: &lt;&lt;print $CognitiveI&gt;&gt;
@@ -335,344 +283,171 @@ $TurnonMusic
 $CheckLocation
 $CheckTraffic
 $CheckWeather
-$AddAStop</tw-passagedata><tw-passagedata pid="8" name="Favorite Place" tags="" position="400,1073" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
+$AddAStop</tw-passagedata><tw-passagedata pid="4" name="Ride Home Screen" tags="" position="932,684" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_favoriteplace.png&quot; alt=&quot;A smartphone displaying the fourth page of account setup. In the middle of the screen there is a textbox that allows you to enter your favorite place to visit. The bottom of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next screen requests you to enter a favorite place to visit. The applications requests you to enter places you can visit frequently such as your home or work so that you can access the location quickly whenever you want to book a ride in the future. The application allows you to enter one favorite place during the setup but you can add more later.
-
-&lt;/p&gt;
-
-Enter address of a favorite place? &lt;&lt;textbox &quot;$favorite&quot; &quot;&quot;&gt;&gt;
-
-
-After entering an address of a favorite place into the text boxes Click the ‘Next’ button.
-
-	  [[Next|Preferences]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Preferences" tags="" position="399,1225" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference1.png&quot; alt=&quot;A smartphone displaying the fifth page of account setup. In the middle of the screen there are many preferences listed with options to choose from. &quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; On the fifth screen, there are controls to adjust how you want to interact with the mobile application and the vehicle.
-
-
-&lt;/p&gt;
-
-
-Choose the contrast of the text:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
-
-Choose the size of the text:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;small&quot;&gt;&gt; Small&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;large&quot;&gt;&gt; Large&lt;/label&gt;
-
-Choose your preferred volume:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
-
-Turn On/Off Subtitles:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Turn On/Off Voice Control:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Turn On/Off Screen Reader:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Choose your preferred Language:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;English&quot; checked&gt;&gt; English&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Spanish&quot;&gt;&gt; Spanish&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Others&quot;&gt;&gt; Others&lt;/label&gt;
-
-	  
-	  &lt;/div&gt;
-	  &lt;div class=&quot;col s8&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference2.png&quot; alt=&quot;A smartphone displaying the fifth page of account setup. In the middle of the screen there are many preferences listed with options to choose from. The bottom of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-[Vehicle Settings]
-
-Choose the driving speed of the car:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Fast&quot;&gt;&gt; Fast&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Slow&quot;&gt;&gt; Slow&lt;/label&gt;
-
-Choose Braking Type: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Aggressive&quot;&gt;&gt; Aggressive&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Relaxed&quot; checked&gt;&gt; Relaxed&lt;/label&gt;
-
-Choose your overtaking preferences:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Actively overtake&quot;&gt;&gt; Actively overtake&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Avoid overtaking except when it is safe to do so&quot; checked&gt;&gt; Avoid overtaking except when it is safe to do so&lt;/label&gt;
-&lt;label&gt;
-&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Never overtake&quot;&gt;&gt; Never overtake&lt;/label&gt;
-
-Turn On/Off Visual Impaired Assist:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Vehicle prioritize going to emergency locations such as hospitals before reaching my destination in the case of an emergency
-&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Receive Notifications of special rates and discounts on my phone
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Share live location in case of an accident
-&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Share trips details and Live GPS of all trips with Caretaker
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-
-After entering your selections you then Click the ‘Next’ button.
-
-	  [[Next|Payment Method]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Payment Method" tags="" position="400,1375" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_payment.png&quot; alt=&quot;A smartphone displaying the sixth page of account setup process. In the middle of the screen there is a textbox that allows you to enter a payment method. The bottom section of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The final step is for you to your preferred payment method to quicken the process of paying for trips. You can add a credit/debit card or link your Paypal account.
-
-
-&lt;/p&gt;
-
-Choose your preferred Payment Method:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;PayPal&quot;&gt;&gt; PayPal&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;Venmo&quot;&gt;&gt; Venmo&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;ApplePay&quot;&gt;&gt; Apple Pay&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;GooglePay&quot;&gt;&gt; Google Pay&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;CreditCard&quot; checked&gt;&gt; Credit Card&lt;/label&gt;
-
-Once you finish entering your payment method, you select the ‘Finish &amp; Review Account’ button to complete your account creation. You are returned to your account page. It has an image box with the caption, “Please add a picture.” You can do this later. Next, your name and email address are listed. Below that, there are four options you can use to edit specific areas of your account, including my payment method, saved places, emergency contacts, and preferences. 
-
-Now you can hit the ride button or say “Ride” if you’ve activated voice commands.
-
-
-	  [[Ride|Mobile or Web]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Ride Home Screen" tags="" position="456,1723" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_home.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map. The bottom of the screen has a button that allows you to request a ride.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The ride page has a map captioned “current location”, and a button labeled “Request Ride”.
-Once you decided you want to book a ride, you must hit the “Request Ride button”
+	&lt;div class=&quot;col s6&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The ride page has a map captioned “current location” and a button labeled “Request a Ride”.
 	
-After you hit the “Request Ride” button the app takes you to the next screen.
-
+When you are ready to book a ride, press the “Request a Ride” button to continue.
 &lt;/p&gt;
-
-
-
-	  [[Request Ride|Pickup Location]]
+	  [[Request a Ride|Pickup Location]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Pickup Location" tags="" position="470,1861" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Pickup Location" tags="" position="946,822" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_pickup.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map. The bottom of the screen gives you options to enter your pickup location.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The first step to requesting a ride is to enter your pickup location.
-
-&lt;/p&gt;
-
+	&lt;div class=&quot;col s6&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The first step to requesting a ride is to enter your pickup location.&lt;/p&gt;
 How would you like to enter your pickup location:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Use My Current Location&quot;&gt;&gt; Use My Current Location&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Set location using the map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Choose one from my favorite list&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Choose from one of your recent places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Enter an Address&quot; checked&gt;&gt; Enter an Address&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Enter Address&quot;&gt;&gt; Enter an address&lt;/label&gt;
 
-Once you enter your pickup location, it takes you to the next screen.
-
-
-	  [[Next Screen|Destination]]
+Once you enter your pickup location, click the Next button to continue.
+  [[Next|Destination]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Destination" tags="" position="470,2011" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Destination" tags="" position="946,972" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_destination.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map, and a blue line that connects the dot to your pickup location. The bottom of the screen displays options to enter your destination, and a summary of your trip.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; You must enter your destination in a similar way to how you entered your pickup location.
+	&lt;div class=&quot;col s6&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; You must enter your destination in a similar way to how you entered your pickup location.&lt;/p&gt;
+How would you like to enter your destination:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Enter Address&quot;&gt;&gt; Enter an address&lt;/label&gt;
 
-&lt;/p&gt;
-
-How would you like to enter your Destination:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Use My Current Location&quot;&gt;&gt; Use My Current Location&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Set location using the map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Choose one from my favorite list&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Choose from one of your recent places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Enter an Address&quot; checked&gt;&gt; Enter an Address&lt;/label&gt;
-
-Once you enter your destination, it takes you to the next screen.
-
-
-	  [[Next Screen|Car Type]]
+Once you enter your destination, click the Next button to continue.
+[[Next|Car Type]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Car Type" tags="" position="470,2159" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="Car Type" tags="" position="946,1120" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_cartype.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map, and a line that connects your pickup location to your destination. The bottom of the screen displays options for you to select your car type, and a summary of your trip.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next step is for you to choose the type of vehicle you want to ride in. You have three car types to choose from, each listed with their price and the approximate time it will take for the vehicle to reach your pickup location in minutes. There is a standard 4-seater compact car, a luxury car if I want something fancy, and a 7-seater van for large groups. 
-
-
-&lt;/p&gt;
-
-Choose Car Type: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Sedan&quot; checked&gt;&gt; Standard | 5 seater | Compact Car | Economical Pricing &lt;/label&gt;
+	&lt;div class=&quot;col s6&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next step is for you to choose the type of vehicle you want to ride in. You have three car types to choose from, each listed with their price and the approximate time it will take for the vehicle to reach your pickup location in minutes. There is a standard 4-seater compact car, a luxury car if I want something fancy, and a 7-seater van for large groups. &lt;/p&gt;
+Choose car type: 
+&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Sedan&quot;&gt;&gt; Standard | 5 seater | Compact Car | Economical Pricing 
 &lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Luxury&quot;&gt;&gt; Luxury | 5 Seater | Extra Legroom| Luxury Pricing&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Van&quot;&gt;&gt; 7 Seater | Affordable rides for larger groups | Economical Pricing&lt;/label&gt;
 
-What features would you like the cars to support?
-Number of Seats &lt;&lt;textbox &quot;$seatno&quot; &quot;&quot; autofocus&gt;&gt;
+Please answer the following questions of additional features you would like to see in the car?
 
+How many seats would you like the car to have?
+&lt;&lt;textbox &quot;$PrefferedNoOfSeats&quot; &quot;&quot; &gt;&gt;
 
 Car should be wheelchair accessible?
-&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;true&quot; checked&gt;&gt;Yes &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;false&quot;&gt;&gt; No&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;Yes&quot;&gt;&gt;Yes &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;No&quot;&gt;&gt; No&lt;/label&gt;
 
+Any other features you would like to see in the car? 
+&lt;&lt;textbox &quot;$ExtraFeaturesWantedToBeSeenInCar&quot; &quot;&quot; &gt;&gt;
 
-Any other features you would like to see in the car? &lt;&lt;textbox &quot;$ExtraFeatures&quot; &quot;&quot; autofocus&gt;&gt;
-
-
-
-Once you select your Car Type, it takes you to the next screen.
-
-
-	  [[Next Screen|Preferred Route]]
+Once you select your car type and entered your thoughts about the vehicle, click Next to continue.
+	  [[Next|Preferred Route]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Preferred Route" tags="" position="470,2309" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Preferred Route" tags="" position="946,1268.3333333333333" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_route.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map, and a line that connects your pickup location to your destination. There are other lines that represent alternate routes to the destination. The bottom of the screen displays options for you to select your preferred route, and a summary of your trip.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; Over here you have an option to select from different routes that the vehicle may take. You are presented with multiple options based on the availability of routes. 
-
-
-&lt;/p&gt;
-
-
-
-Would you like to able to select your preferred route in Ridesharing Vehicles?
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PrefferedRoute&quot; &quot;Yes&quot; checked&gt;&gt; Yes &lt;/label&gt;
+	&lt;div class=&quot;col s6&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; Now you have the option to select from different routes that the vehicle may take. You are presented with multiple options based on the availability of routes. &lt;/p&gt;
+Would you like to be able to select your preferred route in Ridesharing vehicles?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$PrefferedRoute&quot; &quot;Yes&quot;&gt;&gt; Yes &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$PrefferedRoute&quot; &quot;No&quot;&gt;&gt; No&lt;/label&gt;
 
-
-
-
-
-
-Once you select your Route, it takes you to the next screen.
-
-
-	  [[Next Screen|Pay for ride]]
+Once you select your route, click Next to continue.
+	  [[Next|Pay for ride]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Pay for ride" tags="" position="470,2457" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Pay for ride" tags="" position="948,1418" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_payment.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map, and a line that connects your pickup location to your destination. The bottom of the screen displays options for you to select your payment type, and a summary of your trip.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The final step is to select a payment method.
+	&lt;div class=&quot;col s6&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The final step is to select a payment method.&lt;/p&gt;
+How would you normally like to pay for a ride?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;Saved Payment&quot;&gt;&gt; Using a saved payment method &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;New Payment&quot;&gt;&gt;Adding a new payment method&lt;/label&gt;
 
-
-&lt;/p&gt;
-
-Choices:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;Select a saved payment method&quot; checked&gt;&gt; Select a saved payment method &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;Add a new payment method&quot;&gt;&gt;Add a new payment method&lt;/label&gt;
-
-Once you select your Payment Preference, it takes you to the next screen.
-
-
-	  [[Next Screen|Book Ride]]
+Once you select your payment preference, click Next to continue.
+	  [[Next|Book Ride]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Book Ride" tags="" position="470,2607" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Book Ride" tags="" position="946,1566" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_bookride.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map, and a line that connects your pickup location to your destination. The bottom of the screen displays booking options for the trip, and a summary of your trip.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
+	&lt;div class=&quot;col s6&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; Before you complete the payment process a final list of 4 options is presented.
 - Split cost with others
-- Book Ride Now
-- Schedule Ride for Later
-- Book for Someone else
+- Book ride now
+- Schedule ride for later
+- Book for someone else
 
-For now you will go with Book Ride Now.
+Click on the Book ride now button to finish your ride request and start the application searching for your car.
 
-Once you add your payment method and select Book Ride Now, the application responds by searching for a nearby car. 
-
-[[Book Ride Now|Search for nearby car]]
+[[Book ride now|Search for nearby car]]
 
 &lt;/p&gt;	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Search for nearby car" tags="" position="471,2759" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Search for nearby car" tags="" position="947,1720" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_waiting.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination. In the middle of the screen, there is a logo which notifies you that a car is being looked for. At the bottom of the screen, there is a button that allows you to cancel the search.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
+	&lt;div class=&quot;col s6&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; While waiting for the car to be found we would like to ask a couple of questions.
 
-Do you like the final summary information or not, and why? 
-&lt;&lt;textbox &quot;$SummaryInfo&quot; &quot;&quot; autofocus&gt;&gt;
+What are your thoughts about the presentation of the ride booking summary? 
+&lt;&lt;textbox &quot;$SummaryInfoRideBookingProcess&quot; &quot;&quot;&gt;&gt;
+
+How would you rate the ride booking process?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;1&quot; &gt;&gt; Poor &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;2&quot; &gt;&gt; Ok &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;3&quot; &gt;&gt; Good &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;5&quot; &gt;&gt; Excellent &lt;/label&gt;
 
 What were the things you liked about the ride booking process, and why?
-&lt;&lt;textbox &quot;$LikedAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
+&lt;&lt;textbox &quot;$LikedAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
 
 What were the things you disliked about the ride booking process, and why?
-&lt;&lt;textbox &quot;$DislikedAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
+&lt;&lt;textbox &quot;$DislikedAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
 
 What improvements you would like to see in the ride booking process, and why?
-&lt;&lt;textbox &quot;$ImprovementsAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
+&lt;&lt;textbox &quot;$ImprovementsAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
+
 
 Any other feedback?
-&lt;&lt;textbox &quot;$FeedbackAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
-
-&lt;/p&gt;
-	  [[Next Screen|Found Car]]
+&lt;&lt;textbox &quot;$FeedbackAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;&lt;/p&gt;
+	  [[Next|Found Car]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Found Car" tags="" position="470,2910" size="100,100">&lt;h2&gt; Waiting for Car&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="Found Car" tags="" position="946,1871" size="100,100">&lt;h2&gt; Waiting for Car&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s8&quot;&gt;	
+	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_ridefound.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a dot that represents your pickup location on the map, and a line that connects your pickup location to your destination. The bottom of the screen displays the details of your trip, and the time of arrival with different options.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;col s4&quot;&gt;
+	&lt;div class=&quot;col s6&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; The app informs you that a car has been found. You are now able to see a map that is captioned “Your car is on its way”. The app also provides you details of the vehicle, including license plate number, color, and the vehicle’s make and model. 
 
 The application also provides you with an estimated time of arrival of the vehicle. At the bottom of the screen, you have the following options:
@@ -683,126 +458,129 @@ Choices:
 - Learn about any co-passengers
 - Review the booking summary
 - Call support
-- Cancel Ride
-
-
-
+- Cancel ride
 &lt;/p&gt;
-
-
-
-
-	  [[Next Screen|Imagining The Car]]
+	  [[Next|Imagining The Car]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Car has arrived" tags="" position="470,3059" size="100,100">&lt;h2&gt; Arrival of the self-driving vehicle&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Car has arrived" tags="" position="948,2017" size="100,100">&lt;h2&gt; Arrival of the self-driving vehicle&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	
 	&lt;div class=&quot;col s12&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
 	  &lt;b&gt;[The application plays a voice to notify you]&lt;/b&gt;
 	  
-Saying “Your vehicle has arrived at your pickup location”. It also gives more contextual details such as “The vehicle is at the front entrance”. Followed by saying “Please begin walking, I will guide you towards the vehicle.”
-
-A beeping sound begins to play to help you find the vehicle. When the beeping speed increases it means you are getting closer to the vehicle.
+Saying “Your vehicle has arrived at your pickup location”. It also gives more contextual details such as “The vehicle is at the front entrance”. Followed by saying “Please begin walking, I will guide you towards the vehicle using a beeping sound that will increase in frequency the closer you get to the vehicle.”
 
 Once you reach the vehicle the app says “You are at the vehicle. The vehicle will take over communication at the time. Enjoy your ride”
 
-[A voice is heard coming from the vehicle’s external HMI]
+[A voice is heard coming from the vehicle’s external Human Machine Interface]
 
-EHMI: This is RideEasy Vehicle No. 123. I’m a Toyota Camry
+eHMI: This is RideEasy Vehicle No. 123. I’m a Toyota Camry
 
-EHMI: Please verify you are the rider
+eHMI: Please verify you are the rider
 &lt;/p&gt;
 How would you like to verify your identity?
-Choose Car Type: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Touch Phone to vehicle (like ApplePay)&quot; checked&gt;&gt; Touch Phone to vehicle (like ApplePay) &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Keypad for Account Pin #&quot;&gt;&gt; Keypad for Account Pin # &lt;/label&gt;
+Choose verification type: 
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Phone Verification&quot; &gt;&gt; Touch Phone to vehicle (like ApplePay) &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Account Pin&quot;&gt;&gt; Keypad for Account Pin # &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Facial Recognition&quot;&gt;&gt; Facial Recognition (like ApplePay) &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Verbal identification to vehicle&quot;&gt;&gt; Verbal identification to vehicle &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Verbal Identification&quot;&gt;&gt; Verbal identification to vehicle &lt;/label&gt;
 
-Any other method of verification you would like to see? &lt;&lt;textbox &quot;$ExtraVerificationMethod&quot; &quot;&quot; autofocus&gt;&gt;
+Any other options for verifying your identity that you would prefer? &lt;&lt;textbox &quot;$ExtraVerificationMethod&quot; &quot;&quot;&gt;&gt;
 
 
 Once you verify your self the vehicle says “Thank you for confirming your identity. Please select your ingress choice. (Select all that apply)
 
-&lt;label&gt;&lt;&lt;checkbox &quot;$AutoOpeningDoors&quot; false true&gt;&gt; Auto opening doors&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$WheelchairAccessibleRamp&quot; false true&gt;&gt; Wheelchair accessible ramp&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$OpenDoorThroughMobilePhone&quot; false true&gt;&gt; Open door through Mobile Phone&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$AutoOpeningDoors&quot; No Yes&gt;&gt; Auto opening doors&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$WheelchairAccessibleRamp&quot; No Yes&gt;&gt; Wheelchair accessible ramp&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$OpenDoorThroughMobilePhone&quot; No Yes&gt;&gt; Open door through Mobile Phone&lt;/label&gt;
 
 Any other method of ingress you would like to see? 
-&lt;&lt;textbox &quot;$ExtraIngressMethod&quot; &quot;&quot; autofocus&gt;&gt;
+&lt;&lt;textbox &quot;$ExtraIngressMethod&quot; &quot;&quot;&gt;&gt;
 
 
+How would you  rate your interaction with the vehicle and the methods offered for entering the vehicle?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;1&quot; &gt;&gt; Poor &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;2&quot; &gt;&gt; Ok &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;3&quot; &gt;&gt; Good &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;5&quot; &gt;&gt; Excellent &lt;/label&gt;
+
+What did you like about the process of verification and entering into the vehicle?
+&lt;&lt;textbox &quot;$LikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
+
+What did you dislike about the process of verification and entering into the vehicle?
+&lt;&lt;textbox &quot;$DislikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
+
+What improvements would you like to see in the verification process and entering into the vehicle and why?
+&lt;&lt;textbox &quot;$ImprovementstoVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
 
 
-
-
-
-
-	  [[Next Screen|Interior Description]]
+	  [[Next|Interior Description]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Destination Verification" tags="" position="361,3469" size="100,100">&lt;h2&gt; Confirming your Destination&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Destination Verification" tags="" position="837,2430" size="100,100">&lt;h2&gt; Confirming your Destination&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	
 	&lt;div class=&quot;col s12&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt;
 The vehicle speaks out your destination for confirmation and asks you “Would you like to keep this destination, or do you want to make a change?”
 
-[[Make a Change|New Destination]]
-[[Keep Destination|The Journey Begins]]
+[[Make a change|New Destination][$DestinationChangeChoice to &quot;New Destination&quot;]]
+[[Keep destination|The Journey Begins][$DestinationChangeChoice to &quot;Keep Destination&quot;]]
 
 
 	 &lt;/p&gt; 
 	  &lt;/div&gt;
 	 &lt;/div&gt;
-	 </tw-passagedata><tw-passagedata pid="22" name="Command Choices" tags="" position="936,3651" size="100,100">&lt;h2&gt; In-Vehicle Commands &lt;/h2&gt;
+	 </tw-passagedata><tw-passagedata pid="15" name="Command Choices" tags="" position="1412,2612" size="100,100">&lt;h2&gt; In-Vehicle Commands &lt;/h2&gt;
 
 &lt;p style=&quot;text-align: justify;&quot;&gt;After the experience of having the vehicle announce landmarks, you’re interested in trying out the other capabilities of this self-driving car. From what you learned from the tech articles you’ve been reading, you can use commands to do things like changing the temperature or checking the weather. 
+
 Select a command that you would like to try.
 
 Command Options:
 	
-[[Change Temperature|Change Temperature][$ChangeTemperature to &quot;true&quot;]]
-[[Turn on Music|Turn on Music][$TurnonMusic to &quot;true&quot;]]
-[[Check Location|Check Location][$CheckLocation to &quot;true&quot;]]
-[[Check Traffic|Check Traffic][$CheckTraffic to &quot;true&quot;]]
-[[Check Weather|Check Weather][$CheckWeather to &quot;true&quot;]]
-[[Add A Stop|Adding A Stop][$AddAStop to &quot;true&quot;]]
+[[Change temperature|Change Temperature][$ChangeTemperature to &quot;True&quot;]]
+[[Turn on music|Turn on Music][$TurnonMusic to &quot;True&quot;]]
+[[Check location|Check Location][$CheckLocation to &quot;True&quot;]]
+[[Check traffic|Check Traffic][$CheckTraffic to &quot;True&quot;]]
+[[Check weather|Check Weather][$CheckWeather to &quot;True&quot;]]
+[[Add a stop|Adding A Stop][$AddAStop to &quot;True&quot;]]
 
 [[Next|Scene 8]]
 
 &lt;/p&gt;
-</tw-passagedata><tw-passagedata pid="23" name="Adding A Stop" tags="" position="454,3859" size="100,100">&lt;h2&gt; Adding A Stop &lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="16" name="Adding A Stop" tags="" position="930,2820" size="100,100">&lt;h2&gt; Adding A Stop &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 
 “Hey RideEasy, add a stop.”
 
 The iHMI says “Confirmed. Preparing to add a stop. Where would you like to stop?”
 
-Please Enter Your Stop.
-&lt;&lt;textbox &quot;$stop&quot; &quot;&quot;&gt;&gt;
+Please enter the name of your stop.
+&lt;&lt;textbox &quot;$NameOfStop&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Closest or Address]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="24" name="Situational Awareness" tags="" position="944,3499" size="100,100">&lt;h2&gt; Situational Awareness &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;It’s only been a few minutes since your trip began, but so far, you’re very impressed. The application was easy to use, finding the right car was simple, and the fact that all the features  can be accessed with my voice is impressive. Not to mention the seats are quite comfortable, and the ride has been smooth.
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="17" name="Situational Awareness" tags="" position="1420,2460" size="100,100">&lt;h2&gt; Situational Awareness &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;
 
-The iHMI says, “We are now passing a CVS on the right.”
+In the first few minutes of your trip, you suddenly hear the iHMI say, &quot;We are now passing a CVS on the right.&quot;
 
-You think that’s a pretty neat feature; having the car speak out in different places, so that you know where you are.
+You realize that the vehicle is informing you of your surroundings so that you are aware of your location throughout the trip.
 
 &lt;/p&gt;
 
-[[Continue|Command Choices]]</tw-passagedata><tw-passagedata pid="25" name="Change Temperature" tags="" position="730,3862" size="100,100">&lt;h2&gt; Changing the Temperature &lt;/h2&gt;
+[[Next|Command Choices]]</tw-passagedata><tw-passagedata pid="18" name="Change Temperature" tags="" position="1206,2823" size="100,100">&lt;h2&gt; Changing the Temperature &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;“Hey RideEasy, lower temperature to 68 degrees.”
 
 The iHMI says “Confirmed. Setting the temperature to 68 degrees Fahrenheit”
 
 &lt;/p&gt;
 [[Try Another Command|Command Choices]]
-[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="26" name="Check Location" tags="" position="950,3865" size="100,100">&lt;h2&gt; Check Location &lt;/h2&gt;
+[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="19" name="Check Location" tags="" position="1426,2826" size="100,100">&lt;h2&gt; Check Location &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 
 “Hey RideEasy, how far are we from my destination?”
@@ -812,7 +590,7 @@ The iHMI says “Confirmed. You are 27 minutes from One Research Drive, Greenvil
 
 &lt;/p&gt;
 [[Try Another Command|Command Choices]]
-[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="27" name="Check Traffic" tags="" position="1350,3864" size="100,100">&lt;h2&gt; Check Traffic &lt;/h2&gt;
+[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="20" name="Check Traffic" tags="" position="1826,2825" size="100,100">&lt;h2&gt; Check Traffic &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;“Hey RideEasy, what’s the current traffic like?”
 
 The iHMI says “Confirmed, there is light traffic currently on the road.”
@@ -820,50 +598,48 @@ The iHMI says “Confirmed, there is light traffic currently on the road.”
 
 &lt;/p&gt;
 [[Try Another Command|Command Choices]]
-[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="28" name="Check Weather" tags="" position="1572,3863" size="100,100">&lt;h2&gt; Check Weather &lt;/h2&gt;
+[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="21" name="Check Weather" tags="" position="2048,2824" size="100,100">&lt;h2&gt; Check Weather &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;“Hey RideEasy, what’s the weather like?”
 
 The iHMI says “Confirmed. The current forecast at your destination in Greenville, South Carolina, is rain with a chance of thunderstorms and a temperature of 82 degrees.”
 
 &lt;/p&gt;
 [[Try Another Command|Command Choices]]
-[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="29" name="Closest or Address" tags="" position="184,3886" size="100,100">&lt;h2&gt; Closest Stop or a Specific Address? &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;The iHMI says “Confirmed. Do you wish to select a specific $stop or just the closest?”
+[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="22" name="Closest or Address" tags="" position="675,2847" size="100,100">&lt;h2&gt; Closest Stop or a Specific Address? &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;The IHMI says “Confirmed. Do you wish to select a specific $NameOfStop or just the closest?”
 
-[[Closest Location|Confirmation]]
-[[Enter Address|Stop Address]]
+[[Closest location|Confirmation][$ChoiceForAddingAStopAddress to &quot;Closest Location&quot;]]
+[[Enter address|Stop Address][$ChoiceForAddingAStopAddress to &quot;Enter New Address&quot;]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="30" name="Stop Address" tags="" position="59,4028" size="100,100">&lt;h2&gt; Entering Stop Address &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="23" name="Stop Address" tags="" position="673,2989" size="100,100">&lt;h2&gt; Entering Stop Address &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;The iHMI says &quot;Please enter the address of the new stop.&quot;
 
-Please Enter The Address For Your Stop.
+Please enter the address for your stop.
 &lt;&lt;textbox &quot;$stopAdd&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Confirmation]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="31" name="Confirmation" tags="" position="266,4023" size="100,100">&lt;h2&gt; Confirmation of Stop &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="24" name="Confirmation" tags="" position="899,3028" size="100,100">&lt;h2&gt; Confirmation of Stop &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;The iHMI says, “Confirmed. I have found this $stop. It is 10 minutes away. Adding this stop to your trip will increase your ride cost from $7.63 to $12.72. Do you agree with these changes?”
 
 [[Yes, I agree.|Stop is Added]]
 [[No, I don&#39;t agree.|Adding A Stop]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="32" name="Stop is Added" tags="" position="165,4185" size="100,100">&lt;h2&gt; Stop is Confirmed &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="25" name="Stop is Added" tags="" position="673,3146" size="100,100">&lt;h2&gt; Stop is Confirmed &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;The iHMI says “Confirmed. The route has been changed to include a stop at $stop. Your new ride cost is $12.72, and the estimated time of arrival at your stop is 12:20pm. 
 
 [[Next|Nearing Stop]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="33" name="Nearing Stop" tags="" position="198,4356" size="100,100">&lt;h2&gt; Nearing your Stop &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="26" name="Nearing Stop" tags="" position="673,3317" size="100,100">&lt;h2&gt; Nearing your Stop &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 
 The iHMI says “You will arrive at your destination in one minute.”
-
-Wow, that was quick.
 
 The iHMI says “Upon arrival, you will be dropped off at the best location possible. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Then the vehicle will park in the parking lot. When you are ready to be picked up again, you can use the application to summon the vehicle.”
 
 [[Next|Arrived at Stop]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="34" name="Arrived at Stop" tags="" position="198,4531" size="100,100">&lt;h2&gt; Arrived at Stop &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="27" name="Arrived at Stop" tags="" position="674,3492" size="100,100">&lt;h2&gt; Arrived at Stop &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 
 The iHMI says “You have arrived at your stop. The vehicle has stopped in front of your destination with your door facing the entrance. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Then the vehicle will park in the parking lot. When you are ready to be picked up again, you can use the application to summon the vehicle. Please wait while the vehicle is lowered, and your door is opened.”
@@ -878,17 +654,17 @@ You then open the application to get some help finding the entrance.
 
 [[Next|Application at Stop]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="35" name="Application at Stop" tags="" position="306,4672" size="100,100">&lt;h2&gt; Application Assistance &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="28" name="Application at Stop" tags="" position="887,3647" size="100,100">&lt;h2&gt; Application Assistance &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;[You open the application]
 [Upon opening the application]
 
 The Application says “I see you have exited your vehicle. If you would like navigation-based assistance finding your destination, state “assistance&quot;. Otherwise you can state &quot;Continue&quot; in order to continue.”
 
 
-[[Continue|Exiting Stop Location]]
-[[Assistance|Navigating to Entrance Preference]]
+[[Continue|Exiting Stop Location][$ChoiceOfAssistanceAtStop to &quot;No Assistance&quot;]]
+[[Assistance|Navigating to Entrance Preference][$ChoiceOfAssistanceAtStop to &quot;Assistance&quot;]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="36" name="Navigation Based Assistance" tags="" position="143,4909" size="100,100">&lt;h2&gt; Finding Entrance &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="29" name="Navigation Based Assistance" tags="" position="673,3870" size="100,100">&lt;h2&gt; Finding Entrance &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;The Application says “Confirmed. A beeping sound will begin to play to help you find the entrance. When the beeping begins to speed up, this means that you are getting closer to the entrance of your destination.”
 
 [The application is already beeping quickly]
@@ -903,7 +679,7 @@ Application: You are the entrance of your destination.
 
 [[Next|Exiting Stop Location]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="37" name="Exiting Stop Location" tags="" position="226,5092" size="100,100">&lt;h2&gt; Exiting your Stop Location &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="30" name="Exiting Stop Location" tags="" position="702,4053" size="100,100">&lt;h2&gt; Exiting your Stop Location &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 
 Now you need to use the app so that you can find the car again. 
@@ -915,12 +691,11 @@ Apparently, the app knows that you’re still in the middle of a drive and that 
 Options:
 [[Summon the Vehicle|Calling Vehicle]]
 
-[[Cancel|Exiting Stop Location]]
-
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="38" name="Calling Vehicle" tags="" position="224,5271" size="100,100">&lt;h2&gt; Summoning the Vehicle &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="31" name="Calling Vehicle" tags="" position="367,4197" size="100,100">&lt;h2&gt; Summoning the Vehicle &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; The Application says “Confirmed. The vehicle has been notified you are ready and is returning to your location to pick you up. Please wait.”
 
 [Vehicle arrives at the pickup location]
+
 The Application says “The vehicle has arrived at the pickup location. A beeping sound will begin to play to help you find the vehicle. When the beeping begins to speed up, this means that you are getting closer to the vehicle.”
 
 [The application begins to beep]
@@ -937,7 +712,7 @@ Here we go!
 
 [[Next|Remembering You]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="39" name="Re-entering the Vehicle" tags="" position="229,5422" size="100,100">&lt;h2&gt; Re-entering the Vehicle &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="32" name="Re-entering the Vehicle" tags="" position="705,4383" size="100,100">&lt;h2&gt; Re-entering the Vehicle &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; The eHMI says “Welcome back, $name. Please wait while the vehicle lowers to the ground and opens your door.”
 
 [Vehicle lowers height to ground level]
@@ -946,49 +721,35 @@ Here we go!
 
 The eHMI says “You may now enter the vehicle. A beeping noise will help you to find the entrance.”
 
-Alright, time to go to ICAR.
-
 [You enter the vehicle and sits down]
 
 The iHMI says “Whenever you are ready, you can state “ready” to proceed with the trip. Please make sure to fasten your seatbelt first.” 
 
 [[Ready|Resuming Route]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="40" name="Resuming Route" tags="" position="231,5617" size="100,100">&lt;h2&gt; Resuming Your Journey &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="33" name="Resuming Route" tags="" position="707,4576.333333333333" size="100,100">&lt;h2&gt; Resuming Your Journey &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; The iHMI says “Beginning route to your final destination. Your destination is 30 minutes away, and the estimated time of arrival is now 1:07pm.”
 
 
 [[Next|Scene 8]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="41" name="Scene 8" tags="" position="743,5286" size="100,100">&lt;h2&gt; Getting Close to Destination &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="34" name="Scene 8" tags="" position="1219,4247" size="100,100">&lt;h2&gt; Getting Close to Destination &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; [Car getting closer to destination]
 
 The iHMI says “You will arrive at your destination in one minute.”
 
-
-That was a smooth trip! It didn’t even feel like 30 minutes. Hopefully the car drops you in another good location so you can find your way to the front door of ICAR. You’re hoping it will be able to help you navigate again since you’re guessing the entrance to ICAR is further from the car than the Walmart’s entrance was.
-
 The iHMI says “Upon arrival, you will be dropped off in the best location possible. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Once you reach the entrance and give the command, the vehicle will depart.” 
-
-
-You can’t wait to get there and explore the campus. You’ve heard so much about ICAR and the new technologies they are developing. You really like how the app helps me out, it gives you confidence that you know where you’re going.
 
 [Car approaches destination]
 
-You feel the car slowing down, so you must be here!
-
 iHMI: You have arrived at your destination. Please wait while the vehicle parks in the dropoff location. 
-
-Great!
 
 [[Next|Scene 9]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="42" name="Scene 9" tags="" position="336,6006" size="100,100">&lt;h2&gt; Final Drop Off &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="35" name="Scene 9" tags="" position="812,4965" size="100,100">&lt;h2&gt; Final Drop Off &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; [Vehicle parks in a drop off location]
 
 iHMI: You have arrived at your destination. The vehicle has stopped in front of your destination with your door facing the entrance. Upon exiting, you will be on a sidewalk, and the mobile application can help guide you toward the entrance of your destination. Once you reach the entrance and give the command, the vehicle will depart. 
-
-That’s convenient. What service. So far, this ride has far exceeded your expectations.
 
 iHMI: Please wait while the vehicle is lowered, and your door is opened.
 
@@ -1001,16 +762,16 @@ iHMI: You may now exit the vehicle.
 
 [[Next|Scene 10]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="43" name="Scene 10" tags="" position="328,6191" size="100,100">&lt;h2&gt; Do you need Assistance? &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="36" name="Scene 10" tags="" position="804,5152" size="100,100">&lt;h2&gt; Do you need Assistance? &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 
 The Application says “I see you have exited your vehicle. If you would like navigation-based assistance finding your destination, state “assistance&quot;. Otherwise you can state &quot;Continue&quot; in order to continue.”
 
 
-[[Continue|Dismiss the Vehicle]]
-[[Assistance|Final Navigation to Entrance]]
+[[Continue|Dismiss the Vehicle][$ChoiceOfAssistanceAtDestination to &quot;No Assistance&quot;]]
+[[Assistance|Final Navigation to Entrance][$ChoiceOfAssistanceAtDestination to &quot;Assistance&quot;]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="44" name="Final Navigation to Entrance" tags="" position="429,6341" size="100,100">&lt;h2&gt; Navigating to Entrance &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="37" name="Final Navigation to Entrance" tags="" position="905,5300" size="100,100">&lt;h2&gt; Navigating to Entrance &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; The application says &quot;Confirmed. A beeping sound will begin to play to help you find the entrance. When the beeping begins to speed up, this means that you are getting closer to the entrance of your destination.&quot;
 
 The beeping isn’t very fast, so it looks like you have a little walk to the entrance.
@@ -1034,112 +795,128 @@ The application says &quot;You are at the entrance of your destination.&quot;
 
 [[Next|Dismiss the Vehicle]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="45" name="Dismiss the Vehicle" tags="" position="253,6491" size="100,100">&lt;h2&gt; Dismissing the Vehicle &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; Wow! That was easier than you expected. This ride-sharing service is amazing! The trip went well despite not having a human driver in the vehicle. You had reservations about self-driving vehicles and RideEasy’s ride-sharing service, especially when it came to the safety and accessibility of the systems, but after this, you’re convinced that this new technology and service will significantly improve your independence. No more taking the bus or relying on family for rides.
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="38" name="Dismiss the Vehicle" tags="" position="727.3333333333334,5452" size="100,100">&lt;h2&gt; Dismissing the Vehicle &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt; 
+Once you have made it to the entrance, you are ready for the vehicle to leave. 
 
 The Application says &quot;Please select “Yes” when you wish to dismiss the vehicle&quot;
 
-
 [[Yes|Dismiss Details]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="46" name="Rating the Ride" tags="" position="253,6641" size="100,100">&lt;h2&gt; Rating the Ride &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="39" name="Rating the Ride" tags="" position="729,5602" size="100,100">&lt;h2&gt; Rating the Ride &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; [The vehicle begins to leave the campus]
 
-The application says “Confirmed. Vehicle departing. On a scale of zero to five, with five being the highest, how would you rate this ride?”
+The application says “Confirmed. Vehicle departing. On a scale of zero to five, with five being the highest, how would you rate your overall experience with RideEasy that involved booking and riding in a ridesharing autonomous vehicle?”
 &lt;/p&gt;
 
 Choose Rating: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Rating&quot; &quot;0&quot; &gt;&gt; 0 &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Rating&quot; &quot;1&quot; &gt;&gt; 1 &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Rating&quot; &quot;2&quot; &gt;&gt; 2 &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Rating&quot; &quot;3&quot; &gt;&gt; 3 &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Rating&quot; &quot;4&quot; &gt;&gt; 4 &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Rating&quot; &quot;5&quot; &gt;&gt; 5 &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$OverAllRating&quot; &quot;1&quot; &gt;&gt; Poor &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$OverAllRating&quot; &quot;2&quot; &gt;&gt; Ok &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$OverAllRating&quot; &quot;3&quot; &gt;&gt; Good &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$OverAllRating&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$OverAllRating&quot; &quot;5&quot; &gt;&gt; Exceleent &lt;/label&gt;
+
+What were the things you liked about the overall process?
+&lt;&lt;textbox &quot;$LikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
+
+What were the things you disliked about the overall process?
+&lt;&lt;textbox &quot;$DislikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
+
+What improvements you would like to see in the overall process and why?
+&lt;&lt;textbox &quot;$ImprovementsAboutDislikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Demographic Info]]
-</tw-passagedata><tw-passagedata pid="47" name="The End" tags="" position="258,6964" size="100,100">&lt;h2&gt; The End &lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="40" name="The End" tags="" position="727,6200" size="100,100">&lt;h2&gt; The End &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; The application says “Confirmed. Thank you for choosing RideEasy for your travel needs. We look forward to driving you again in the future. Have a great day!”
 
-&lt;&lt;set $surveyid to random(10000, 99999)&gt;&gt;
 
-Here is the survey code required to complete your Mturk HIT: &lt;&lt;print $surveyid&gt;&gt;
 &lt;/p&gt;
-
+&lt;&lt;set $pid to random(1000,9999)&gt;&gt;
 
 
 &lt;&lt;script&gt;&gt;
 var sendData = JSON.stringify({
-&quot;name&quot;: State.getVar(&quot;$name&quot;), 
-&quot;email&quot;: State.getVar(&quot;$email&quot;),
-&quot;ECname&quot;: State.getVar(&quot;$ECname&quot;),
-&quot;ECemail&quot;: State.getVar(&quot;$ECemail&quot;),
-&quot;ECnumber&quot;: State.getVar(&quot;$ECnumber&quot;),
-&quot;BrakingType&quot;: State.getVar(&quot;$BrakingType&quot;),
-&quot;DrivingSpeed&quot;: State.getVar(&quot;$DrivingSpeed&quot;),
-&quot;EmergencyPriority&quot;: State.getVar(&quot;$EmergencyPriority&quot;),
-&quot;Language&quot;: State.getVar(&quot;$Language&quot;),
-&quot;LiveLocation&quot;: State.getVar(&quot;$LiveLocation&quot;),
-&quot;Notifications&quot;: State.getVar(&quot;$Notifications&quot;),
-&quot;Overtaking&quot;: State.getVar(&quot;$Overtaking&quot;),
-&quot;ScreenReader&quot;: State.getVar(&quot;$ScreenReader&quot;),
-&quot;ShareGPSCareTaker&quot;: State.getVar(&quot;$ShareGPSCareTaker&quot;),
-&quot;TextContrast&quot;: State.getVar(&quot;$TextContrast&quot;),
-&quot;TextSize&quot;: State.getVar(&quot;$TextSize&quot;),
-&quot;VisualImpairedAssist&quot;: State.getVar(&quot;$VisualImpairedAssist&quot;),
-&quot;VoiceControl&quot;: State.getVar(&quot;$VoiceControl&quot;),
-&quot;Volume&quot;: State.getVar(&quot;$Volume&quot;),
-&quot;favorite&quot;: State.getVar(&quot;$favorite&quot;),
-&quot;subtitles&quot;: State.getVar(&quot;$subtitles&quot;),
-&quot;stop&quot;: State.getVar(&quot;$stop&quot;),
-&quot;stopAdd&quot;: State.getVar(&quot;$stopAdd&quot;),
-&quot;Rating&quot;: State.getVar(&quot;$Rating&quot;),
-&quot;signupchoice&quot;: State.getVar(&quot;$signupchoice&quot;),
-&quot;mobileselection&quot;: State.getVar(&quot;$mobileselection&quot;),
-&quot;webselection&quot;: State.getVar(&quot;$webselection&quot;),
-&quot;exteriordescription&quot;: State.getVar(&quot;$exteriordescription&quot;), 
-&quot;interiordescription&quot;: State.getVar(&quot;$interiordescription&quot;), 
-&quot;AutoOpeningDoors&quot;: State.getVar(&quot;$AutoOpeningDoors&quot;), 
-&quot;WheelchairAccessibleRamp&quot;: State.getVar(&quot;$WheelchairAccessibleRamp&quot;), 
-&quot;OpenDoorThroughMobilePhone&quot;: State.getVar(&quot;$OpenDoorThroughMobilePhone&quot;), 
-&quot;ExtraIngressMethod&quot;: State.getVar(&quot;$ExtraIngressMethod&quot;), 
+&quot;pid&quot;: State.getVar(&quot;$pid&quot;),
+&quot;ChoiceforSignUp&quot;: State.getVar(&quot;$ChoiceforSignUp&quot;),
+&quot;ReasonForChoiceOfSignUp&quot;: State.getVar(&quot;$ReasonForChoiceOfSignUp&quot;),
+&quot;ChoiceForRideBooking&quot;: State.getVar(&quot;$ChoiceForRideBooking&quot;),
+&quot;ReasonForChoiceOfRideBooking&quot;: State.getVar(&quot;$ReasonForChoiceOfRideBooking&quot;),
+&quot;MethodToEnterPickupLocation&quot;: State.getVar(&quot;$MethodToEnterPickupLocation&quot;),
+&quot;DestinationMethod&quot;: State.getVar(&quot;$DestinationMethod&quot;),
+&quot;CarType&quot;: State.getVar(&quot;$CarType&quot;),
+&quot;PrefferedNoOfSeats&quot;: State.getVar(&quot;$PrefferedNoOfSeats&quot;),
+&quot;WheelChairSupport&quot;: State.getVar(&quot;$WheelChairSupport&quot;),
+&quot;ExtraFeaturesWantedToBeSeenInCar&quot;: State.getVar(&quot;$ExtraFeaturesWantedToBeSeenInCar&quot;),
+&quot;PrefferedRoute&quot;: State.getVar(&quot;$PrefferedRoute&quot;),
+&quot;PaymentPreference&quot;: State.getVar(&quot;$PaymentPreference&quot;),
+&quot;SummaryInfoRideBookingProcess&quot;: State.getVar(&quot;$SummaryInfoRideBookingProcess&quot;),
+&quot;LikedAboutTheRideBookingProcess&quot;: State.getVar(&quot;$LikedAboutTheRideBookingProcess&quot;),
+&quot;DislikedAboutTheRideBookingProcess&quot;: State.getVar(&quot;$DislikedAboutTheRideBookingProcess&quot;),
+&quot;ImprovementsAboutTheRideBookingProcess&quot;: State.getVar(&quot;$ImprovementsAboutTheRideBookingProcess&quot;),
+&quot;RideBookingProcessRating&quot;: State.getVar(&quot;$RideBookingProcessRating&quot;),
+&quot;FeedbackAboutTheRideBookingProcess&quot;: State.getVar(&quot;$FeedbackAboutTheRideBookingProcess&quot;),
+&quot;exteriordescription&quot;: State.getVar(&quot;$exteriordescription&quot;),
+&quot;interiordescription&quot;: State.getVar(&quot;$interiordescription&quot;),
+&quot;VerificationMethod&quot;: State.getVar(&quot;$VerificationMethod&quot;),
+&quot;ExtraVerificationMethod&quot;: State.getVar(&quot;$ExtraVerificationMethod&quot;),
+&quot;AutoOpeningDoors&quot;: State.getVar(&quot;$AutoOpeningDoors&quot;),
+&quot;WheelchairAccessibleRamp&quot;: State.getVar(&quot;$WheelchairAccessibleRamp&quot;),
+&quot;OpenDoorThroughMobilePhone&quot;: State.getVar(&quot;$OpenDoorThroughMobilePhone&quot;),
+&quot;ExtraIngressMethod&quot;: State.getVar(&quot;$ExtraIngressMethod&quot;),
+&quot;RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot;: State.getVar(&quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot;),
+&quot;LikedAboutTheVerificationAndIngressProcess&quot;: State.getVar(&quot;$LikedAboutTheVerificationAndIngressProcess&quot;),
+&quot;DislikedAboutTheVerificationAndIngressProcess&quot;: State.getVar(&quot;$DislikedAboutTheVerificationAndIngressProcess&quot;),
+&quot;ImprovementsAboutDislikedAboutTheVerificationAndIngressProcess&quot;: State.getVar(&quot;$ImprovementsAboutDislikedAboutTheVerificationAndIngressProcess&quot;),
+&quot;DestinationChangeChoice&quot;: State.getVar(&quot;$DestinationChangeChoice&quot;),
+&quot;ChangingDestinationMethod&quot;: State.getVar(&quot;$ChangingDestinationMethod&quot;),
 &quot;iHMIinteractionPref&quot;: State.getVar(&quot;$iHMIinteractionPref&quot;),
-&quot;OtheriHMI&quot;: State.getVar(&quot;$OtheriHMI&quot;),
+&quot;OtherMethodForIHMIInteractionPref&quot;: State.getVar(&quot;$OtherMethodForIHMIInteractionPref&quot;),
+&quot;ReasonForIHMIInteractionPreference&quot;: State.getVar(&quot;$ReasonForIHMIInteractionPreference&quot;),
 &quot;communicationbackfromIHMIPref&quot;: State.getVar(&quot;$communicationbackfromIHMIPref&quot;),
-&quot;commandpreferencewhy&quot;: State.getVar(&quot;$commandpreferencewhy&quot;),
-&quot;alertpreferencewhy&quot;: State.getVar(&quot;$alertpreferencewhy&quot;),
-&quot;rememberwhy&quot;: State.getVar(&quot;$rememberwhy&quot;),
-&quot;dismissVoice&quot;: State.getVar(&quot;$dismissVoice&quot;),
-&quot;dismissApp&quot;: State.getVar(&quot;$dismissApp&quot;),
-&quot;otherDismiss&quot;: State.getVar(&quot;$otherDismiss&quot;),
-&quot;dismisspreferencewhy&quot;: State.getVar(&quot;$dismisspreferencewhy&quot;),
-&quot;rememberhome&quot;: State.getVar(&quot;$rememberhome&quot;),
-&quot;age&quot;: State.getVar(&quot;$age&quot;),
-&quot;gender&quot;: State.getVar(&quot;$gender&quot;),
-&quot;selfdescribe&quot;: State.getVar(&quot;$selfdescribe&quot;),
-&quot;education&quot;: State.getVar(&quot;$education&quot;),
-&quot;race&quot;: State.getVar(&quot;$race&quot;),
-&quot;occupation&quot;: State.getVar(&quot;$occupation&quot;),
-&quot;visualstatus&quot;: State.getVar(&quot;$visualstatus&quot;),
-&quot;lowvision&quot;: State.getVar(&quot;$lowvision&quot;),
-&quot;blindstatus&quot;: State.getVar(&quot;$blindstatus&quot;),
-&quot;visualacuity&quot;: State.getVar(&quot;$visualacuity&quot;),
-&quot;impairments &quot;: State.getVar(&quot;$impairments&quot;),
+&quot;OtherMethodForcommunicationbackfromIHMIPref&quot;: State.getVar(&quot;$OtherMethodForcommunicationbackfromIHMIPref&quot;),
+&quot;ReasonForMethodOfCommunicationBackFromIHMIPref&quot;: State.getVar(&quot;$ReasonForMethodOfCommunicationBackFromIHMIPref&quot;),
 &quot;ChangeTemperature&quot;: State.getVar(&quot;$ChangeTemperature&quot;),
 &quot;TurnonMusic&quot;: State.getVar(&quot;$TurnonMusic&quot;),
 &quot;CheckLocation&quot;: State.getVar(&quot;$CheckLocation&quot;),
 &quot;CheckTraffic&quot;: State.getVar(&quot;$CheckTraffic&quot;),
 &quot;CheckWeather&quot;: State.getVar(&quot;$CheckWeather&quot;),
 &quot;AddAStop&quot;: State.getVar(&quot;$AddAStop&quot;),
+&quot;NameOfStop&quot;: State.getVar(&quot;$NameOfStop&quot;),
+&quot;ChoiceForAddingAStopAddress&quot;: State.getVar(&quot;$ChoiceForAddingAStopAddress&quot;),
+&quot;stopAdd&quot;: State.getVar(&quot;$stopAdd&quot;),
+&quot;ChoiceOfAssistanceAtStop&quot;: State.getVar(&quot;$ChoiceOfAssistanceAtStop&quot;),
+&quot;MethodPrefForNavigatingToDestinationEntrance&quot;: State.getVar(&quot;$MethodPrefForNavigatingToDestinationEntrance&quot;),
+&quot;OtherMethodPrefForNavigatingToDestinationEntrance&quot;: State.getVar(&quot;$OtherMethodPrefForNavigatingToDestinationEntrance&quot;),
+&quot;ReasonForMethodPrefForNavigatingToDestinationEntrance&quot;: State.getVar(&quot;$ReasonForMethodPrefForNavigatingToDestinationEntrance&quot;),
+&quot;rememberwhy&quot;: State.getVar(&quot;$rememberwhy&quot;),
+&quot;ChoiceOfAssistanceAtDestination&quot;: State.getVar(&quot;$ChoiceOfAssistanceAtDestination&quot;),
+&quot;MethodForDismissingVehicle&quot;: State.getVar(&quot;$MethodForDismissingVehicle&quot;),
+&quot;RememberMe&quot;: State.getVar(&quot;$RememberMe&quot;),
+&quot;RememberAddress&quot;: State.getVar(&quot;$RememberAddress&quot;),
+&quot;OtherMethodForDismissingVehicle&quot;: State.getVar(&quot;$OtherMethodForDismissingVehicle&quot;),
+&quot;ReasonForChoiceOfMethodForDismissingVehicle&quot;: State.getVar(&quot;$ReasonForChoiceOfMethodForDismissingVehicle&quot;),
+&quot;rememberhome&quot;: State.getVar(&quot;$rememberhome&quot;),
+&quot;OverAllRating&quot;: State.getVar(&quot;$OverAllRating&quot;),
+&quot;LikedAboutTheVerificationAndIngressProcess&quot;: State.getVar(&quot;$LikedAboutTheVerificationAndIngressProcess&quot;),
+&quot;DislikedAboutTheVerificationAndIngressProcess&quot;: State.getVar(&quot;$DislikedAboutTheVerificationAndIngressProcess&quot;),
+&quot;ImprovementstoVerificationAndIngressProcess&quot;: State.getVar(&quot;$ImprovementstoVerificationAndIngressProcess&quot;),
+&quot;gender&quot;: State.getVar(&quot;$gender&quot;),
+&quot;GenderSelfDescribe&quot;: State.getVar(&quot;$GenderSelfDescribe&quot;),
+&quot;education&quot;: State.getVar(&quot;$education&quot;),
+&quot;race&quot;: State.getVar(&quot;$race&quot;),
+&quot;occupation&quot;: State.getVar(&quot;$occupation&quot;),
+&quot;disabilitystatus&quot;: State.getVar(&quot;$disabilitystatus&quot;),
 &quot;HearingImpairment&quot;: State.getVar(&quot;$HearingImpairment&quot;),
+&quot;VisualImpairment&quot;: State.getVar(&quot;$VisualImpairment&quot;),
 &quot;SpeechImpairment&quot;: State.getVar(&quot;$SpeechImpairment&quot;),
 &quot;MobilityImpairment&quot;: State.getVar(&quot;$MobilityImpairment&quot;),
 &quot;CognitiveImpairment&quot;: State.getVar(&quot;$CognitiveImpairment&quot;),
 &quot;NoImpairments&quot;: State.getVar(&quot;$NoImpairments&quot;),
 &quot;PrefernottoidentifyImpairments&quot;: State.getVar(&quot;$PrefernottoidentifyImpairments&quot;),
 &quot;OtherImpairments&quot;: State.getVar(&quot;$OtherImpairments&quot;),
-&quot;signupwithappreason&quot;: State.getVar(&quot;$signupwithappreason&quot;),
-&quot;signupwithwebreason&quot;: State.getVar(&quot;$signupwithwebreason&quot;),
-&quot;surveyid&quot;: State.getVar(&quot;$surveyid&quot;)
+&quot;lowvision&quot;: State.getVar(&quot;$lowvision&quot;),
+&quot;blindstatus&quot;: State.getVar(&quot;$blindstatus&quot;),
+&quot;visualacuity&quot;: State.getVar(&quot;$visualacuity&quot;)
 });
  
 $.ajax({
@@ -1148,114 +925,100 @@ method:&quot;POST&quot;,
 dataType: &quot;json&quot;,
 data: sendData
 }).done(function() {});
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Mobile or Web" tags="" position="733,1426" size="100,100">&lt;h2&gt; Mobile Application or Website? &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; Now that you are done setting up your account, you are ready request a ride! You can either continue using the method you choose earlier or select a different method to book a ride.  Choose the mobile application on your smartphone, or the RideEasy website to book your ride. 
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Selected Application" tags="" position="1069,534" size="100,100">&lt;h2&gt; Mobile Application &lt;/h2&gt;
 
-Which option would you prefer to use?
-
-[[Mobile Applicaton|Selected Application]]
-[[Web|Selected Web]]
-
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="49" name="Selected Application" tags="" position="593,1571" size="100,100">&lt;h2&gt; Mobile Application &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; You decided to use the mobile application in order to book your ride. Why did you choose this option?
 
-&lt;&lt;textbox &quot;$mobileselection&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$ReasonForChoiceOfRideBooking&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Ride Home Screen]]
 
 &lt;/p&gt;
 
-</tw-passagedata><tw-passagedata pid="50" name="Selected Web" tags="" position="805,1569" size="100,100">&lt;h2&gt; Web Application &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; You decided to use the Ride Easy website in order to book your ride. Why did you choose this option?
+</tw-passagedata><tw-passagedata pid="42" name="Selected Web" tags="" position="1281,530" size="100,100">&lt;h2&gt; Web Application &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt; You decided to use the RideEasy website in order to book your ride. Why did you choose this option?
 
-&lt;&lt;textbox &quot;$webselection&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$ReasonForChoiceOfRideBooking&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Web Ride Home Screen]]
 
 &lt;/p&gt;
-</tw-passagedata><tw-passagedata pid="51" name="Interior Description" tags="" position="535,3480" size="100,100">&lt;h2&gt; Description of Interior&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="43" name="Interior Description" tags="" position="1011,2441" size="100,100">&lt;h2&gt; Description of Interior&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/interior_detailed.jpg&quot; alt=&quot;An overhead picture of the interior of the vehicle, and a description of the design features within the vehicle.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/interior.png&quot; alt=&quot;An overhead picture of the interior of the vehicle, and a description of the design features within the vehicle.&quot; border=&quot;0&quot; height=400 width=800&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
-	  Now the vehicle has arrived, and after you select your preferred ingress method you enter the vehicle and take your seat.
+	  You enter the vehicle and take your seat.
 
-Inside the vehicle, there are four seats, all facing the front of the vehicle. The vehicle has a high ceiling, and extra leg room. There are wheelchair positions, in-cabin hooks for walking aids, and self-securing wheelchair restraints. There are also infotainment screens for each passenger seat.
+Inside the vehicle, there are four seats, all facing the front of the vehicle. The vehicle has a high ceiling, and extra leg room. There are wheelchair positions, in-cabin hooks for walking aids, and self-securing wheelchair restraints. There are also infotainment screens for each passenger seat also reffered to IHMI (Internal Human-Machine Interface).
 
 &lt;/p&gt;
 
 
-	  [[Next Screen|Destination Verification]]
+	  [[Next|Destination Verification]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="Imagining The Car" tags="" position="645,3011" size="100,100">&lt;h2&gt; Imagining the Vehicle&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Imagining The Car" tags="" position="1121,1972" size="100,100">&lt;h2&gt; Imagining the Vehicle&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
-	
 	&lt;div class=&quot;col s12&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
 	  As you are waiting for the vehicle to arrive, you begin to wonder what the vehicle will look like.
 	  
 	  In a few sentences, what do you imagine the exterior of the vehicle to look like?
 	  &lt;&lt;textbox &quot;$exteriordescription&quot; &quot;&quot;&gt;&gt;
+	  
 	  In a few sentences, what do you imagine the interior of the vehicle to look like?
 	  &lt;&lt;textbox &quot;$interiordescription&quot; &quot;&quot;&gt;&gt;
-
 &lt;/p&gt;
-
-
-	  [[Next|Car has arrived]]
+[[Next|Car has arrived]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="iHMI Description and Picture" tags="" position="395,3589" size="100,100">&lt;h2&gt; Picture of iHMI&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="iHMI Description and Picture" tags="" position="871,2599" size="100,100">&lt;h2&gt; Picture of iHMI&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/HMI.png&quot; alt=&quot;A picture of the in-vehicle infotainment screen. The left side shows a picture of the vehicle, with trip directions and options to alter the trip. The right side shows a map of the route, with command options for the vehicle.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/HMI.png&quot; alt=&quot;A picture of the in-vehicle infotainment screen. The left side shows a picture of the vehicle, with trip directions and options to alter the trip. The right side shows a map of the route, with command options for the vehicle.&quot; border=&quot;0&quot; height=600 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
-	  
-	  The in-vehicle infotainment screen has many cool features. On the right side of the screen there is a map that shows the current location of the vehicle, and the route to your destination. On the left side of the screen, you can see the address of your destination, the time remaining in your trip, the estimated time of arrival, and you have options to start the ride or to choose an alternate route. 
-	  
-
-&lt;/p&gt;
-
-
-	  [[Next Screen|inVehicle Interaction Preference]]
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; 	  
+	  The in-vehicle infotainment screen has many features. On the right side of the screen there is a map that shows the current location of the vehicle, and the route to your destination. On the left side of the screen, you can see the address of your destination, the time remaining in your trip, the estimated time of arrival, and you have options to start the ride or to choose an alternate route. &lt;/p&gt;
+	  [[Next|inVehicle Interaction Preference]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="inVehicle Interaction Preference" tags="" position="697,3506" size="100,100">&lt;h2&gt; In-Vehicle Command Preference &lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="46" name="inVehicle Interaction Preference" tags="" position="1178,2526" size="100,100">&lt;h2&gt; In-Vehicle Command Preference &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 
 
 &lt;/p&gt;
 
-What method would you prefer to use when interacting with the iHMI?
-Choices: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;voice&quot;&gt;&gt; Voice&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;application&quot; checked&gt;&gt; Through Mobile Application&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;throughseat&quot;&gt;&gt; Through the Seat&lt;/label&gt;
-You can use this textbox to enter another method.
-&lt;&lt;textbox &quot;$OtheriHMI&quot; &quot;&quot;&gt;&gt;
+What method would you prefer to interact with the IHMI?
+
+&lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;Voice&quot;&gt;&gt; Voice&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;Mobile App&quot;&gt;&gt; Through mobile application&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;Seat Controls&quot;&gt;&gt; Through the seat&lt;/label&gt;
+
+You can use this text box to enter another method.
+&lt;&lt;textbox &quot;$OtherMethodForIHMIInteractionPref&quot; &quot;&quot;&gt;&gt;
 
 Why did you select this interaction method?
-&lt;&lt;textbox &quot;$commandpreferencewhy&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$ReasonForIHMIInteractionPreference&quot; &quot;&quot;&gt;&gt;
 
 How would you prefer the iHMI to communicate back to you?
-Choices: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;phonenotification&quot;&gt;&gt; Phone Notifiation&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;announcement&quot; checked&gt;&gt; Voice Announcement&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;infotainment&quot;&gt;&gt; Visually on the Personal Infotainment Screen&lt;/label&gt;
-You can use this textbox to enter another method.
-&lt;&lt;textbox &quot;$otheralert&quot; &quot;&quot;&gt;&gt;
+ 
+&lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;phonenotification&quot;&gt;&gt; Phone Notification&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;Verbal Announcement&quot;&gt;&gt; Voice announcement&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;Infotainment Display&quot;&gt;&gt; Visually on the personal infotainment screen&lt;/label&gt;
 
-Why did you select this alert method?
-&lt;&lt;textbox &quot;$alertpreferencewhy&quot; &quot;&quot;&gt;&gt;
+You can use this text box to enter another method.
+&lt;&lt;textbox &quot;$OtherMethodForcommunicationbackfromIHMIPref&quot; &quot;&quot;&gt;&gt;
+
+Why did you select this communication method?
+&lt;&lt;textbox &quot;$ReasonForMethodOfCommunicationBackFromIHMIPref&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Situational Awareness]]
 
-</tw-passagedata><tw-passagedata pid="55" name="Turn on Music" tags="" position="1159,3863" size="100,100">&lt;h2&gt; Turn on Music &lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="47" name="Turn on Music" tags="" position="1635,2824" size="100,100">&lt;h2&gt; Turn on Music &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;“Hey RideEasy, turn the music to 98.5 FM.”
 
 The iHMI says “Confirmed. Turning on music and switching to station 98.5 FM”
@@ -1263,64 +1026,70 @@ The iHMI says “Confirmed. Turning on music and switching to station 98.5 FM”
 
 &lt;/p&gt;
 [[Try Another Command|Command Choices]]
-[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="56" name="Navigating to Entrance Preference" tags="" position="95,4737" size="100,100">&lt;h2&gt; Navigation Preference &lt;/h2&gt;
+[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="48" name="Navigating to Entrance Preference" tags="" position="673,3698" size="100,100">&lt;h2&gt; Navigation Preference &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 &lt;/p&gt;
 What method would you prefer to use when navigating to the entrance of your destination?
-Choices: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$eHMI&quot; &quot;eHMI&quot;&gt;&gt; The External HMI&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$mobileapp&quot; &quot;mobileapp&quot; &gt;&gt; Through Mobile Application&lt;/label&gt;
-You can use this textbox to enter another method.
-&lt;&lt;textbox &quot;$Othernav&quot; &quot;&quot;&gt;&gt;
+
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodPrefForNavigatingToDestinationEntrance&quot; &quot;IHMI&quot;&gt;&gt; The IHMI&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodPrefForNavigatingToDestinationEntrance&quot; &quot;Mobile App&quot; &gt;&gt; Through mobile application&lt;/label&gt;
+
+You can use this text box to enter another method.
+&lt;&lt;textbox &quot;$OtherMethodPrefForNavigatingToDestinationEntrance&quot; &quot;&quot;&gt;&gt;
 
 Why did you select this interaction method?
-&lt;&lt;textbox &quot;$Navpreferencewhy&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$ReasonForMethodPrefForNavigatingToDestinationEntrance&quot; &quot;&quot;&gt;&gt;
 
-[[Next|Navigation Based Assistance]]</tw-passagedata><tw-passagedata pid="57" name="Remembering You" tags="" position="69,5370" size="100,100">&lt;h2&gt; Re-entering the Vehicle &lt;/h2&gt;
+[[Next|Navigation Based Assistance]]</tw-passagedata><tw-passagedata pid="49" name="Remembering You" tags="" position="578,4226" size="100,100">&lt;h2&gt; Re-entering the Vehicle Preference &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; When returning to a vehicle that you were previously in, would you want the vehicle to remember you? 
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RememberMe&quot; &quot;No&quot;&gt;&gt; No &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RememberMe&quot; &quot;Yes&quot;&gt;&gt; Yes &lt;/label&gt;
 
-Please use the textbox below to state your answer and explain why.
+Why/why not?
 &lt;&lt;textbox &quot;$rememberwhy&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Re-entering the Vehicle]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="58" name="Dismiss Details" tags="" position="446,6594" size="100,100">&lt;h2&gt; Dismissing The Vehicle &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="50" name="Dismiss Details" tags="" position="922,5555" size="100,100">&lt;h2&gt; Dismissing The Vehicle Preferences &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 &lt;/p&gt;
 What method would you prefer to use when dismissing the vehicle?
-Choices: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$dismissVoice&quot; &quot;voice&quot;&gt;&gt; Voice&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$dismissApp&quot; &quot;application&quot;&gt;&gt; Through Mobile Application&lt;/label&gt;
-You can use this textbox to enter another method.
-&lt;&lt;textbox &quot;$otherDismiss&quot; &quot;&quot;&gt;&gt;
+
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodForDismissingVehicle&quot; &quot;Voice&quot;&gt;&gt; Voice&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodForDismissingVehicle&quot; &quot;Mobile App&quot;&gt;&gt; Through mobile application&lt;/label&gt;
+
+You can use this text box to enter another method.
+&lt;&lt;textbox &quot;$OtherMethodForDismissingVehicle&quot; &quot;&quot;&gt;&gt;
 
 Why did you select this interaction method?
-&lt;&lt;textbox &quot;$dismisspreferencewhy&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$ReasonForChoiceOfMethodForDismissingVehicle&quot; &quot;&quot;&gt;&gt;
 
 If you plan to use the same vehicle to return home, would you prefer the vehicle to remember your original home address?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RememberAddress&quot; &quot;No&quot;&gt;&gt; No &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RememberAddress&quot; &quot;Yes&quot;&gt;&gt; Yes &lt;/label&gt;
 
-Please use the textbox below to state your answer and explain why.
+Why/why not?
 &lt;&lt;textbox &quot;$rememberhome&quot; &quot;&quot;&gt;&gt;
 
-[[Next|Rating the Ride]]</tw-passagedata><tw-passagedata pid="59" name="New Destination" tags="" position="32,3332" size="100,100">&lt;h2&gt; Choosing a New Destination&lt;/h2&gt;
+[[Next|Rating the Ride]]</tw-passagedata><tw-passagedata pid="51" name="New Destination" tags="" position="673,2293" size="100,100">&lt;h2&gt; Choosing a New Destination&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	
 	&lt;div class=&quot;col s12&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
 
 How would you like to enter your Destination:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Use My Current Location&quot;&gt;&gt; Use My Current Location&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Set location using the map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Choose one from my favorite list&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Choose from one of your recent places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Enter an Address&quot; checked&gt;&gt; Enter an Address&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Enter Address&quot; &gt;&gt; Enter an Address&lt;/label&gt;
 
-Once you enter your destination, it takes you to the next screen.
+Once you enter your new destination, click Next to continue.
 &lt;/p&gt;
 [[Next|The Journey Begins]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="The Journey Begins" tags="" position="141,3560" size="100,100">&lt;h2&gt; The Journey Begins&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="The Journey Begins" tags="" position="673,2521" size="100,100">&lt;h2&gt; The Journey Begins&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	
 	&lt;div class=&quot;col s12&quot;&gt;
@@ -1334,199 +1103,165 @@ You fasten your seatbelt and say “Ready”. The trip begins.
 &lt;/div&gt;
 
 
-	  [[Next Screen|iHMI Description and Picture]]</tw-passagedata><tw-passagedata pid="61" name="Web Ride Home Screen" tags="" position="801,1719" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	  [[Next|iHMI Description and Picture]]</tw-passagedata><tw-passagedata pid="53" name="Web Ride Home Screen" tags="" position="1277,680" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_home.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen has a button that allows you to request a ride. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_home.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen has a button that allows you to request a ride. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The ride page has a map that displays your current location to the right and an input box to the top left that is captioned &quot;Where would you like to be picked?&quot;. You can click the button below to continue to the next screen.
-
-&lt;/p&gt;
-
-
-
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The ride page has a map that displays your current location to the right and an input box to the top left that is captioned &quot;Where would you like to be picked up?&quot;. Click the Request Ride button below to continue to the next screen.&lt;/p&gt;
 	  [[Request Ride|Web Pickup Location]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="Web Pickup Location" tags="" position="805,1869" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Web Pickup Location" tags="" position="1281,828.3333333333334" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_pickup.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen gives you options to enter your pickup location. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_pickup.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen gives you options to enter your pickup location. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The first step to requesting a ride is to enter your pickup location.
-
-&lt;/p&gt;
-
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The first step to requesting a ride is to enter your pickup location.&lt;/p&gt;
 How would you like to enter your pickup location:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Use My Current Location&quot;&gt;&gt; Use My Current Location&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Set location using the map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Choose one from my favorite list&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Choose from one of your recent places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PickupMethod&quot; &quot;Enter an Address&quot; checked&gt;&gt; Enter an Address&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodToEnterPickupLocation&quot; &quot;Enter Address&quot;&gt;&gt; Enter an address&lt;/label&gt;
 
-Once you enter your pickup location, it takes you to the next screen.
-
-
-	  [[Next Screen|Web Destination]]
+Once you enter your pickup location, click the Next button to continue.
+  [[Next|Web Destination]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="63" name="Web Destination" tags="" position="805,2019" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Web Destination" tags="" position="1281,980" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_destination.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options to enter your destination. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_destination.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options to enter your destination. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; You must enter your destination in a similar way to how you entered your pickup location.
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; You must enter your destination in a similar way to how you entered your pickup location.&lt;/p&gt;
+How would you like to enter your destination:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Enter Address&quot;&gt;&gt; Enter an address&lt;/label&gt;
 
-&lt;/p&gt;
-
-How would you like to enter your Destination:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Use My Current Location&quot;&gt;&gt; Use My Current Location&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Set location using the map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Choose one from my favorite list&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Choose from one of your recent places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Enter an Address&quot; checked&gt;&gt; Enter an Address&lt;/label&gt;
-
-Once you enter your destination, it takes you to the next screen.
-
-
-	  [[Next Screen|Web Car Type]]
+Once you enter your destination, click the Next button to continue.
+	  [[Next|Web Car Type]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="Web Car Type" tags="" position="805,2169" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Web Car Type" tags="" position="1281,1130" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_cartype.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your car type, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_cartype.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your car type, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next step is for you to choose the type of vehicle you want to ride in. You have three car types to choose from, each listed with their price and the approximate time it will take for the vehicle to reach your pickup location in minutes. There is a standard 4-seater compact car, a luxury car if I want something fancy, and a 7-seater van for large groups. 
-
-
-&lt;/p&gt;
-
-Choose Car Type: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Sedan&quot; checked&gt;&gt; Standard | 5 seater | Compact Car | Economical Pricing &lt;/label&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next step is for you to choose the type of vehicle you want to ride in. You have three car types to choose from, each listed with their price and the approximate time it will take for the vehicle to reach your pickup location in minutes. There is a standard 4-seater compact car, a luxury car if I want something fancy, and a 7-seater van for large groups. &lt;/p&gt;
+Choose car type: 
+&lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Sedan&quot;&gt;&gt; Standard | 5 seater | Compact Car | Economical Pricing &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Luxury&quot;&gt;&gt; Luxury | 5 Seater | Extra Legroom| Luxury Pricing&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Van&quot;&gt;&gt; 7 Seater | Affordable rides for larger groups | Economical Pricing&lt;/label&gt;
 
-What features would you like the cars to support?
-Number of Seats &lt;&lt;textbox &quot;$seatno&quot; &quot;&quot; autofocus&gt;&gt;
+Please answer the following questions of additional features you would like to see in the car?
 
+How many seats would you like the car to have?
+&lt;&lt;textbox &quot;$PrefferedNoOfSeats&quot; &quot;&quot;&gt;&gt;
 
 Car should be wheelchair accessible?
-&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;true&quot; checked&gt;&gt;Yes &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;false&quot;&gt;&gt; No&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;Yes&quot;&gt;&gt;Yes &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$WheelChairSupport&quot; &quot;No&quot;&gt;&gt; No&lt;/label&gt;
 
+Any other features you would like to see in the car?
+&lt;&lt;textbox &quot;$ExtraFeaturesWantedToBeSeenInCar&quot; &quot;&quot;&gt;&gt;
 
-Any other features you would like to see in the car? &lt;&lt;textbox &quot;$ExtraFeatures&quot; &quot;&quot; autofocus&gt;&gt;
-
-
-
-Once you select your Car Type, it takes you to the next screen.
-
-
-	  [[Next Screen|Web Preferred Route]]
+Once you select your car type and entered your thoughts about the vehicle, click Next to continue.
+	  [[Next|Web Preferred Route]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Web Preferred Route" tags="" position="805,2317" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Web Preferred Route" tags="" position="1281,1278" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_route.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your preferred route, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the mapm and a line that connects your pickup location to your destination. There are other lines that represent alternate routes to the destination.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_route.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your preferred route, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the mapm and a line that connects your pickup location to your destination. There are other lines that represent alternate routes to the destination.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; Over here you have an option to select from different routes that the vehicle may take. You are presented with multiple options based on the availability of routes. 
-
-
-&lt;/p&gt;
-
-Would you like to able to select your preferred route in Ridesharing Vehicles?
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PrefferedRoute&quot; &quot;Yes&quot; checked&gt;&gt; Yes &lt;/label&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; Now you have the option to select from different routes that the vehicle may take. You are presented with multiple options based on the availability of routes. &lt;/p&gt;
+Would you like to be able to select your preferred route in Ridesharing vehicles?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$PrefferedRoute&quot; &quot;Yes&quot;&gt;&gt; Yes &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$PrefferedRoute&quot; &quot;No&quot;&gt;&gt; No&lt;/label&gt;
 
-
-
-
-
-Once you select your Route, it takes you to the next screen.
-
-
-	  [[Next Screen|Web Pay for ride]]
+Once you select your route, click Next to continue.
+	  [[Next|Web Pay for ride]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Web Pay for ride" tags="" position="805,2469" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="Web Pay for ride" tags="" position="1281,1428.3333333333333" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_payment.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your payment type, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_payment.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your payment type, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The final step is to select a payment method.
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; The final step is to select a payment method.&lt;/p&gt;
+How would you normally like to pay for a ride?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;Saved Payment&quot;&gt;&gt; Using a saved payment method &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;New Payment&quot;&gt;&gt;Adding a new payment method&lt;/label&gt;
 
-
-&lt;/p&gt;
-
-Choices:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;Select a saved payment method&quot; checked&gt;&gt; Select a saved payment method &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentPreference&quot; &quot;Add a new payment method&quot;&gt;&gt;Add a new payment method&lt;/label&gt;
-
-Once you select your Payment Preference, it takes you to the next screen.
-
-
-	  [[Next Screen|Web Book Ride]]
+Once you select your payment preference, click Next to continue.
+	  [[Next|Web Book Ride]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="Web Book Ride" tags="" position="805,2619" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="59" name="Web Book Ride" tags="" position="1281,1578" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_bookride.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays booking options for the trip, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_bookride.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays booking options for the trip, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; Before you complete the payment process a final list of 4 options is presented.
 - Split cost with others
-- Book Ride Now
-- Schedule Ride for Later
-- Book for Someone else
+- Book ride now
+- Schedule ride for later
+- Book for someone else
 
-For now you will go with Book Ride Now.
+Click on the Book ride now button to finish your ride request and start the application searching for your car.
 
-Once you add your payment method and select Book Ride Now, the application responds by searching for a nearby car. 
-
-[[Book Ride Now|Web Search for nearby car]]
+[[Book ride now|Web Search for nearby car]]
 
 &lt;/p&gt;	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Web Search for nearby car" tags="" position="805,2769" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="Web Search for nearby car" tags="" position="1283,1730" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_waiting.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays a summary of your trip. The right side of the screen is displaying a there is a logo which notifies you that a car is being looked for.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_waiting.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays a summary of your trip. The right side of the screen is displaying a there is a logo which notifies you that a car is being looked for.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
+	  	&lt;div class=&quot;col s6&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; While waiting for the car to be found we would like to ask a couple of questions.
 
-Do you like the final summary information or not, and why? 
-&lt;&lt;textbox &quot;$SummaryInfo&quot; &quot;&quot; autofocus&gt;&gt;
+What are your thoughts about the presentation of the ride booking summary? 
+&lt;&lt;textbox &quot;$SummaryInfoRideBookingProcess&quot; &quot;&quot;&gt;&gt;
+
+How would you rate the ride booking process?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;1&quot; &gt;&gt; Poor &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;2&quot; &gt;&gt; Ok &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;3&quot; &gt;&gt; Good &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;5&quot; &gt;&gt; Excellent &lt;/label&gt;
 
 What were the things you liked about the ride booking process, and why?
-&lt;&lt;textbox &quot;$LikedAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
+&lt;&lt;textbox &quot;$LikedAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
 
 What were the things you disliked about the ride booking process, and why?
-&lt;&lt;textbox &quot;$DislikedAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
+&lt;&lt;textbox &quot;$DislikedAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
 
 What improvements you would like to see in the ride booking process, and why?
-&lt;&lt;textbox &quot;$ImprovementsAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
+&lt;&lt;textbox &quot;$ImprovementsAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
 
 Any other feedback?
-&lt;&lt;textbox &quot;$FeedbackAboutTheApp&quot; &quot;&quot; autofocus&gt;&gt;
-
-&lt;/p&gt;
-	  [[Next Screen|Web Found Car]]
+&lt;&lt;textbox &quot;$FeedbackAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;&lt;/p&gt;
+	  [[Next|Web Found Car]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="69" name="Web Found Car" tags="" position="805,2919" size="100,100">&lt;h2&gt; Waiting for Car&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="61" name="Web Found Car" tags="" position="1281,1880" size="100,100">&lt;h2&gt; Waiting for Car&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_ridefound.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays the details of your trip, and the time of arrival with different options. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=400 width=800&gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_ridefound.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays the details of your trip, and the time of arrival with different options. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=500 width=1000&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s12&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; The app informs you that a car has been found. You are now able to see a map that is captioned “Your car is on its way”. The app also provides you details of the vehicle, including license plate number, color, and the vehicle’s make and model. 
@@ -1539,406 +1274,104 @@ Choices:
 - Learn about any co-passengers
 - Review the booking summary
 - Call support
-- Cancel Ride
-
-
-
-&lt;/p&gt;
-
-
-
-
-	  [[Next Screen|Web Imagining The Car]]
+- Cancel ride&lt;/p&gt;
+	  [[Next|Imagining The Car]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="Web Imagining The Car" tags="" position="805,3069" size="100,100">&lt;h2&gt; Imagining the Vehicle&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
-	  As you are waiting for the vehicle to arrive, you begin to wonder what the vehicle will look like.
-	  
-	  In a few sentences, what do you imagine the exterior of the vehicle to look like?
-	  &lt;&lt;textbox &quot;$exteriordescription&quot; &quot;&quot;&gt;&gt;
-	  In a few sentences, what do you imagine the interior of the vehicle to look like?
-	  &lt;&lt;textbox &quot;$interiordescription&quot; &quot;&quot;&gt;&gt;
-
-&lt;/p&gt;
-
-
-	  [[Next|Web Car has arrived]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="71" name="Web Car has arrived" tags="" position="956,3089" size="100,100">&lt;h2&gt; Arrival of the self-driving vehicle&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
-	  &lt;b&gt;[The application plays a voice to notify you]&lt;/b&gt;
-	  
-Saying “Your vehicle has arrived at your pickup location”. It also gives more contextual details such as “The vehicle is at the front entrance”. Followed by saying “Please begin walking, I will guide you towards the vehicle.”
-
-A beeping sound begins to play to help you find the vehicle. When the beeping speed increases it means you are getting closer to the vehicle.
-
-Once you reach the vehicle the app says “You are at the vehicle. The vehicle will take over communication at the time. Enjoy your ride”
-
-[A voice is heard coming from the vehicle’s external HMI]
-
-EHMI: This is RideEasy Vehicle No. 123. I’m a Toyota Camry
-
-EHMI: Please verify you are the rider
-&lt;/p&gt;
-How would you like to verify your identity?
-Choose Car Type: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Touch Phone to vehicle (like ApplePay)&quot; checked&gt;&gt; Touch Phone to vehicle (like ApplePay) &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Keypad for Account Pin #&quot;&gt;&gt; Keypad for Account Pin # &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Facial Recognition&quot;&gt;&gt; Facial Recognition (like ApplePay) &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VerificationMethod&quot; &quot;Verbal identification to vehicle&quot;&gt;&gt; Verbal identification to vehicle &lt;/label&gt;
-
-Any other method of verification you would like to see? &lt;&lt;textbox &quot;$ExtraVerificationMethod&quot; &quot;&quot; autofocus&gt;&gt;
-
-
-Once you verify your self the vehicle says “Thank you for confirming your identity. Please select your ingress choice. (Select all that apply)
-
-&lt;label&gt;&lt;&lt;checkbox &quot;$AutoOpeningDoors&quot; false true&gt;&gt; Auto opening doors&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$WheelchairAccessibleRamp&quot; false true&gt;&gt; Wheelchair accessible ramp&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$OpenDoorThroughMobilePhone&quot; false true&gt;&gt; Open door through Mobile Phone&lt;/label&gt;
-
-Any other method of ingress you would like to see? 
-&lt;&lt;textbox &quot;$ExtraIngressMethod&quot; &quot;&quot; autofocus&gt;&gt;
-
-
-
-
-
-
-
-
-	  [[Next Screen|Interior Description]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="Demographic Info" tags="" position="254,6798" size="100,100">&lt;h2&gt; Demographic Information &lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="62" name="Demographic Info" tags="" position="730,5759" size="100,100">&lt;h2&gt; Demographic Information &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 &lt;/p&gt;
-Please Enter your Age:
+Please enter your age:
 &lt;&lt;textbox &quot;$age&quot; &quot;&quot;&gt;&gt;
 
 What is your gender?
 Choices: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;man&quot;&gt;&gt; Man&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;woman&quot;&gt;&gt; Woman&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;nonbinary&quot;&gt;&gt; Non-binary&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;prefernot&quot; &gt;&gt; Prefer not to say&lt;/label&gt;
-You can use this textbox if you prefer to self-describe:
-&lt;&lt;textbox &quot;$selfdescribe&quot; &quot;&quot;&gt;&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;Man&quot;&gt;&gt; Male&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;Woman&quot;&gt;&gt; Female&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;Non-binary&quot;&gt;&gt; Non-binary&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;Prefer not to say&quot; &gt;&gt; Prefer not to say&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$gender&quot; &quot;Prefer to self-describe&quot; &gt;&gt; Prefer to self-describe&lt;/label&gt;
+
+You can use this text box if you prefer to self-describe:
+&lt;&lt;textbox &quot;$GenderSelfDescribe&quot; &quot;&quot;&gt;&gt;
 
 Highest educational level attained?
 Choices: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;lessthanHS&quot;&gt;&gt; Less than High School&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$education &quot; &quot;hsgrad&quot; &gt;&gt; High school graduate&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$education &quot; &quot;somecollege&quot; &gt;&gt; Some College&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$education &quot; &quot;Two-year degree&quot; &gt;&gt; Two-year degree&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$education &quot; &quot;Four-year degree&quot; &gt;&gt; Four-year degree&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$education &quot; &quot;Professional degree&quot;&gt;&gt; Professional degree&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$education &quot; &quot;Doctorate&quot;&gt;&gt; Doctorate&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;lessthanHighSchool&quot;&gt;&gt; Less than High School&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;High School Graduate&quot; &gt;&gt; High school graduate&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;Some College&quot; &gt;&gt; Some college&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;Two-year degree&quot; &gt;&gt; Two-year degree&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;Four-year degree&quot; &gt;&gt; Four-year degree&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;Masters degree&quot;&gt;&gt; Masters degree&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$education&quot; &quot;Doctorate&quot;&gt;&gt; Doctorate&lt;/label&gt;
 
-Race/Ethnicity (select all that apply)
+Race/Ethnicity 
 Choices: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;asian&quot;&gt;&gt; Asian&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$race &quot; &quot;blackaa&quot;&gt;&gt; Black/African American&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;caucasian&quot;&gt;&gt; Caucasian/White &lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;latino&quot; &gt;&gt; Latino/Hispanic&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;nativeA&quot; &gt;&gt; Native American or Alaskan Native&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;nativeH&quot; &gt;&gt; Native Hawaiian or Pacific Islander&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;mixed&quot; &gt;&gt; Mixed Race&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;Asian&quot;&gt;&gt; Asian&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;Black/African American&quot;&gt;&gt; Black/African American&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;Caucasian/White&quot;&gt;&gt; Caucasian/White &lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;LatinX/Hispanic&quot;&gt;&gt; LatinX/Hispanic&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;Native American or Alaskan Native&quot;&gt;&gt; Native American or Alaskan Native&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;Native Hawaiian or Pacific Islander&quot;&gt;&gt; Native Hawaiian or Pacific Islander&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$race&quot; &quot;Mixed Race&quot;&gt;&gt; Mixed Race&lt;/label&gt;
+
 
 Current employment status:
 Choices:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;employedFT&quot;&gt;&gt; Emplyoed Full-Time&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;employedPT&quot;&gt;&gt; Employed Part-Time&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;unemployedL&quot;&gt;&gt; Unemployed Looking for Work&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;unemployedNL&quot;&gt;&gt; Unemployed Not looking for Work&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;retired&quot; &gt;&gt; Retired&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;student&quot;&gt;&gt; Student&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;disabled&quot;&gt;&gt; Disabled&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;Employed Full-time&quot;&gt;&gt; Employed full-time&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;Employed Part-time&quot;&gt;&gt; Employed part-time&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;Unemployed looking for work&quot;&gt;&gt; Unemployed looking for work&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;Unemployed not looking for work&quot;&gt;&gt; Unemployed not looking for work&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;Retired&quot; &gt;&gt; Retired&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;Student&quot;&gt;&gt; Student&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$occupation&quot; &quot;Disabled&quot;&gt;&gt; Disabled&lt;/label&gt;
 
-Do you consider yourself to be a visually impaired person?
+Do you identify as someone with a disability?
+[[Yes|Demographic Info Part 2][$disabilitystatus to &quot;Yes&quot;]]
+[[No|The End][$disabilitystatus to &quot;No&quot;]]
+</tw-passagedata><tw-passagedata pid="63" name="Demographic Info Part 2" tags="" position="936,5844" size="100,100">&lt;h2&gt; Demographic Information &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt; 
+&lt;/p&gt;
+
+What type of disability do you identify with (select all that apply)?
 Choices:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$visualstatus&quot; &quot;VIyes&quot; &gt;&gt; Yes&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$visualstatus&quot; &quot;VIno&quot;&gt;&gt; No&lt;/label&gt;
-
-Having low vision means that even with regular glasses, contact lenses, medication, or surgery, you may find it difficult to perform everyday tasks, such as reading your mail, shopping, preparing meals, and signing your name. Do you identify as a person with low vision?
-Choices:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$lowvision&quot; &quot;LVyes&quot; &gt;&gt; Yes&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$lowvision&quot; &quot;LVno&quot;&gt;&gt; No&lt;/label&gt;
-
-Legal blindness in the United States is characterized as vision in the better seeing eye of 20/200 or worse or a visual field of 20 degrees or less. Do you identify as a person who is blind?
-Choices:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$blindstatus&quot; &quot;Byes&quot; &gt;&gt; Yes&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$blindstatus&quot; &quot;Bno&quot;&gt;&gt; No&lt;/label&gt;
-
-If known, what is the visual acuity of your better seeing eye with conventional correction like glasses or contact lenses?
-&lt;&lt;textbox &quot;$visualacuity&quot; &quot;&quot;&gt;&gt;
-
-Do you have any other impairments?
-Choices:
-&lt;label&gt;&lt;&lt;checkbox &quot;$HearingImpairment&quot; false true&gt;&gt; Hearing Impairment&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$SpeechImpairment&quot; false true&gt;&gt; Speech Impairment&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$MobilityImpairment&quot; false true&gt;&gt; Mobility Impairment&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$CognitiveImpairment&quot; false true&gt;&gt; Cognitive Impairment&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$NoImpairments&quot; false true&gt;&gt; No Other Impairment&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$PrefernottoidentifyImpairments&quot; false true&gt;&gt; Prefer not to identify&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$HearingImpairment&quot; No Yes&gt;&gt; Hearing impairment&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$VisualImpairment&quot; No Yes&gt;&gt; Visual impairment&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$SpeechImpairment&quot; No Yes&gt;&gt; Speech impairment&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$MobilityImpairment&quot; No Yes&gt;&gt; Mobility impairment&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$CognitiveImpairment&quot; No Yes&gt;&gt; Cognitive impairment&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$NoImpairments&quot; No Yes&gt;&gt; No impairment&lt;/label&gt;
+&lt;label&gt;&lt;&lt;checkbox &quot;$PrefernottoidentifyImpairments&quot; No Yes&gt;&gt;Prefer not to identify impairments&lt;/label&gt;
 
 Other impairments: 
 &lt;&lt;textbox &quot;$OtherImpairments&quot; &quot;&quot;&gt;&gt;
 
+Did you identify as someone with a visual impairment?
 
+[[Yes|Visual Impairment Specific Questions]]
+[[No|The End]]
+</tw-passagedata><tw-passagedata pid="64" name="Visual Impairment Specific Questions" tags="" position="1087,5996" size="100,100">&lt;h2&gt; Visual Impairment Information &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt; 
+&lt;/p&gt;
 
+The following questions are for those who identify as someone with visual impairment:
+
+Having low vision means that even with regular glasses, contact lenses, medication, or surgery, you may find it difficult to perform everyday tasks, such as reading your mail, shopping, preparing meals, and signing your name. 
+
+Do you identify as a person with low vision?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$lowvision&quot; &quot;Yes&quot; &gt;&gt; Yes&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$lowvision&quot; &quot;No&quot;&gt;&gt; No&lt;/label&gt;
+
+Legal blindness in the United States is characterized as vision in the better seeing eye of 20/200 or worse or a visual field of 20 degrees or less. 
+
+Do you identify as a person who is blind?
+&lt;label&gt;&lt;&lt;radiobutton &quot;$blindstatus&quot; &quot;Yes&quot; &gt;&gt; Yes&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$blindstatus&quot; &quot;No&quot;&gt;&gt; No&lt;/label&gt;
+
+If known, what is the visual acuity of your better seeing eye with conventional correction like glasses or contact lenses?
+&lt;&lt;textbox &quot;$visualacuity&quot; &quot;&quot;&gt;&gt;
 
 [[Next|The End]]
-</tw-passagedata><tw-passagedata pid="73" name="RideEasy Home Website" tags="" position="520,498" size="100,100">&lt;h2&gt; Accessing the Web application&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_homescreen.png&quot; alt=&quot;A webpage displaying the homescreen of the Ride Easy web application, including a signup and sign in button in the middle of the screen that enables you to create an account or log in to the web application&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; You find RideEasy on the internet and open the app and come to the main screen. The screen reads bringing the worlds most experienced driver to you and presents you with options to sign up or sign in. Apart from those it presents you with options in the navigation bar that include Home, Book Ride, How it Works, Help, About, and Sign In. Clicking the sign up button takes you the page that lists the the three core values of the RideEasy company. First, safety… we use cutting edge safety technology to protect you and your loved ones. Second, reliability... we tirelessly improve our vehicles to make sure you consistently get where you need to go. And finally, freedom… we’ll take the wheel, but you’re in control. Change your destination, stop your ride, or pick up a friend at the push of a button.
-	Clicking next takes you to a screen called &#39;How it works&#39; which lists the initial steps you need to complete to set up the application.  First, it says to “Set up your account,” then “Order a ride,” next “Travel to your destination,” and finally, “Rate your experience.”
-	
-
-	  
-	  [[Next|Setup Account Web]]
-	  &lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-
-</tw-passagedata><tw-passagedata pid="74" name="Setup Account Web" tags="" position="520,650" size="100,100">&lt;head&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css&quot;&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_name.png&quot; alt=&quot;A webpage displaying the first page of account setup. To the left of the screen there is a textbox that allows you to enter your name. The left bottom section of the screen has a button that takes you to the next screen.&quot;  border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; You come to the next screen where you can create your profile, and you’re informed that you can set up your account in six easy steps. The account creation process begins by inquiring, “What’s your name?” 
-
-What is your name? &lt;&lt;textbox &quot;$name&quot; &quot;&quot;&gt;&gt;
-
-After entering your Full Name into the text box Click the Next Button.
-	  
-	  [[Next|Email Address Web]]
-	  
-	  &lt;/p&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-
-
-
-
-</tw-passagedata><tw-passagedata pid="75" name="Email Address Web" tags="" position="520,800" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_email.png&quot; alt=&quot;A webpage displaying the second page of the account setup process. To the left of the screen there is a textbox that allows you to enter your email address. The left bottom section of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next step requests you to enter your email address. Once Again, there is a text box for you to fill in.
-
-What is your Email Address? 
-&lt;&lt;textbox &quot;$email&quot; &quot;&quot;&gt;&gt;
-
-After entering your Email into the text box Click the Next Button.
-
-	  
-	  [[Next|Emergency Contact Web]]
-	  
-	  &lt;/p&gt;
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="76" name="Emergency Contact Web" tags="" position="520,950" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_emergency.png&quot; alt=&quot;A webpage displaying the third part of account setup process. To the left of the screen there is a textbox that allows you to enter your details of your emergency contact. The bottom left section of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; This screen requests you to enter information for an emergency contact. This step is important to RideEasy as it considers the fact that you will be driving without anyone else, and the company believes in being prepared for all kinds of emergencies. There are multiple text boxes for you to fill in where you can enter your emergency contacts Full Name, address, and phone number.
-&lt;/p&gt;
-
-What is your Emergency Contacts Full Name? &lt;&lt;textbox &quot;$ECname&quot; &quot;&quot;&gt;&gt;
-What is your Emergency Contacts Email? &lt;&lt;textbox &quot;$ECemail&quot; &quot;&quot;&gt;&gt;
-What is your Emergency Contacts Phone Number? &lt;&lt;textbox &quot;$ECnumber&quot; &quot;&quot;&gt;&gt;
-
-After entering details of your emergency contact into the text boxes Click the ‘Next’ button.
-
-	  [[Next|Favorite Place Web]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;
-	 
-	  </tw-passagedata><tw-passagedata pid="77" name="Favorite Place Web" tags="" position="520,1100" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_favorite.png&quot; alt=&quot;A webpage displaying the fourth part of account setup process. To the left of the screen there is a textbox that allows you to enter the address of favorite place to visit. The bottom of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next screen requests you to enter a favorite place to visit. The applications requests you to enter places you can visit frequently such as your home or work so that you can access the location quickly whenever you want to book a ride in the future. The application allows you to enter one favorite place during the setup but you can add more later.
-
-&lt;/p&gt;
-
-Enter address of a favorite place? &lt;&lt;textbox &quot;$favorite&quot; &quot;&quot;&gt;&gt;
-
-
-After entering an address of a favorite place into the text boxes Click the ‘Next’ button.
-
-	  [[Next|Preferences Web]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="Preferences Web" tags="" position="520,1250" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference1.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; On the fifth screen, there are controls to adjust how you want to interact with the mobile application and the vehicle.
-&lt;/p&gt;
-Choose the contrast of the text:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
-
-Choose the size of the text:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;small&quot;&gt;&gt; Small&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;large&quot;&gt;&gt; Large&lt;/label&gt;
-
-Choose your preferred volume:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
-
-Turn On/Off Subtitles:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Turn On/Off Voice Control:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Turn On/Off Screen Reader:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Choose your preferred Language:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;English&quot; checked&gt;&gt; English&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Spanish&quot;&gt;&gt; Spanish&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Others&quot;&gt;&gt; Others&lt;/label&gt;
-
-	  
-	  &lt;/div&gt;
-	  &lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference2.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the second half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-
-
-Choose the driving speed of the car:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Fast&quot;&gt;&gt; Fast&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Medium&quot; checked&gt;&gt; Medium&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Slow&quot;&gt;&gt; Slow&lt;/label&gt;
-
-Choose Braking Type: 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Aggressive&quot;&gt;&gt; Aggressive&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Relaxed&quot; checked&gt;&gt; Relaxed&lt;/label&gt;
-
-Choose your overtaking preferences:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Actively overtake&quot;&gt;&gt; Actively overtake&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Avoid overtaking except when it is safe to do so&quot; checked&gt;&gt; Avoid overtaking except when it is safe to do so&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Never overtake&quot;&gt;&gt; Never overtake&lt;/label&gt;
-
-&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference3.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the third half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-
-Turn On/Off Visual Impaired Assist:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Vehicle prioritize going to emergency locations such as hospitals before reaching my destination in the case of an emergency
-&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Receive Notifications of special rates and discounts on my phone
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Share live location in case of an accident
-&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-Share trips details and Live GPS of all trips with Caretaker
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;off&quot; checked&gt;&gt; Off&lt;/label&gt;
-
-
-After entering your selections you then Click the ‘Next’ button.
-
-	  [[Next|Payment Method Web]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="79" name="Payment Method Web" tags="" position="691,1300" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col s12&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_payment.png&quot; alt=&quot;A webpage displaying the sixth page of account setup process. To the left of the screen there is a textbox that allows you to enter a payment method. The bottom left section of the screen has a button that takes you to the next screen.&quot; border=&quot;0&quot; height=400 width=800 &gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col s12&quot;&gt;
-	  &lt;p style=&quot;text-align: justify;&quot;&gt; The final step is for you to your preferred payment method to quicken the process of paying for trips. You can add a credit/debit card or link your Paypal account.
-
-
-&lt;/p&gt;
-
-Choose your preferred Payment Method:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;PayPal&quot;&gt;&gt; PayPal&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;Venmo&quot;&gt;&gt; Venmo&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;ApplePay&quot;&gt;&gt; Apple Pay&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;GooglePay&quot;&gt;&gt; Google Pay&lt;/label&gt;
-&lt;label&gt;&lt;&lt;radiobutton &quot;$PaymentMethod&quot; &quot;CreditCard&quot; checked&gt;&gt; Credit Card&lt;/label&gt;
-
-Once you finish entering your payment method, you select the ‘Finish &amp; Review Account’ button to complete your account creation. You are returned to your account page. It has an image box with the caption, “Please add a picture.” You can do this later. Next, your name and email address are listed. Below that, there are four options you can use to edit specific areas of your account, including my payment method, saved places, emergency contacts, and preferences. 
-
-Now you can hit the ride button or say “Ride” if you’ve activated voice commands.
-
-
-	  [[Ride|Mobile or Web]]
-	  
-	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="80" name="Sign up using app" tags="" position="280,500" size="100,100">&lt;h2&gt; Mobile Application &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; You decided to use the mobile application in order to sign up and create an account. Why did you choose this option?
-
-&lt;&lt;set $signupchoice to &quot;Mobile App&quot; &gt;&gt;
-&lt;&lt;textbox &quot;$signupwithappreason&quot; &quot;&quot;&gt;&gt;
-
-[[Next|RideEasy Home App]]
-
-&lt;/p&gt;
-
-
-</tw-passagedata><tw-passagedata pid="81" name="Sign up using web" tags="" position="640,500" size="100,100">&lt;h2&gt; Web Application &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; You decided to use the Web application in order to sign up and create an account. Why did you choose this option?
-
-&lt;&lt;set $signupchoice to &quot;Web App&quot; &gt;&gt;
-&lt;&lt;textbox &quot;$signupwithwebreason&quot; &quot;&quot;&gt;&gt;
-
-[[Next|RideEasy Home Website]]
-
-&lt;/p&gt;
-
-
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
