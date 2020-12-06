@@ -100,9 +100,14 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="AVnarrative" startnode="1" creator="Twine" creator-version="2.3.9" ifid="0E7CDAA8-0B80-4F60-A680-B8F17C16535A" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body
+	<tw-storydata name="AVnarrative" startnode="1" creator="Twine" creator-version="2.3.9" ifid="0E7CDAA8-0B80-4F60-A680-B8F17C16535A" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#ui-bar {
+	display: none;
+}
+
+body
 {
-  font-size:200% !important;
+  font-size:150% !important;
+
 }
 input[type=checkbox], input[type=radio] {
 
@@ -147,13 +152,14 @@ label
  transform .3s,
  visibility 0s,
  -webkit-transform .3s;z-index:-1}.tap-target-origin{top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);z-index:10002;position:absolute !important}.tap-target-origin:not(.btn):not(.btn-large):not(.btn-small),.tap-target-origin:not(.btn):not(.btn-large):not(.btn-small):hover{background:none}@media only screen and (max-width: 600px){.tap-target,.tap-target-wrapper{width:600px;height:600px}}.pulse{overflow:visible;position:relative}.pulse::before{content:'';display:block;position:absolute;width:100%;height:100%;top:0;left:0;background-color:inherit;border-radius:inherit;-webkit-transition:opacity .3s, -webkit-transform .3s;transition:opacity .3s, -webkit-transform .3s;transition:opacity .3s, transform .3s;transition:opacity .3s, transform .3s, -webkit-transform .3s;-webkit-animation:pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;animation:pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;z-index:-1}@-webkit-keyframes pulse-animation{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}50%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}100%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}}@keyframes pulse-animation{0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}50%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}100%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}}.datepicker-modal{max-width:325px;min-width:300px;max-height:none}.datepicker-container.modal-content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0}.datepicker-controls{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;width:280px;margin:0 auto}.datepicker-controls .selects-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.datepicker-controls .select-wrapper input{border-bottom:none;text-align:center;margin:0}.datepicker-controls .select-wrapper input:focus{border-bottom:none}.datepicker-controls .select-wrapper .caret{display:none}.datepicker-controls .select-year input{width:50px}.datepicker-controls .select-month input{width:70px}.month-prev,.month-next{margin-top:4px;cursor:pointer;background-color:transparent;border:none}.datepicker-date-display{-webkit-box-flex:1;-webkit-flex:1 auto;-ms-flex:1 auto;flex:1 auto;background-color:#26a69a;color:#fff;padding:20px 22px;font-weight:500}.datepicker-date-display .year-text{display:block;font-size:1.5rem;line-height:25px;color:rgba(255,255,255,0.7)}.datepicker-date-display .date-text{display:block;font-size:2.8rem;line-height:47px;font-weight:500}.datepicker-calendar-container{-webkit-box-flex:2.5;-webkit-flex:2.5 auto;-ms-flex:2.5 auto;flex:2.5 auto}.datepicker-table{width:280px;font-size:1rem;margin:0 auto}.datepicker-table thead{border-bottom:none}.datepicker-table th{padding:10px 5px;text-align:center}.datepicker-table tr{border:none}.datepicker-table abbr{text-decoration:none;color:#999}.datepicker-table td{border-radius:50%;padding:0}.datepicker-table td.is-today{color:#26a69a}.datepicker-table td.is-selected{background-color:#26a69a;color:#fff}.datepicker-table td.is-outside-current-month,.datepicker-table td.is-disabled{color:rgba(0,0,0,0.3);pointer-events:none}.datepicker-day-button{background-color:transparent;border:none;line-height:38px;display:block;width:100%;border-radius:50%;padding:0 5px;cursor:pointer;color:inherit}.datepicker-day-button:focus{background-color:rgba(43,161,150,0.25)}.datepicker-footer{width:280px;margin:0 auto;padding-bottom:5px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.datepicker-cancel,.datepicker-clear,.datepicker-today,.datepicker-done{color:#26a69a;padding:0 1rem}.datepicker-clear{color:#F44336}@media only screen and (min-width: 601px){.datepicker-modal{max-width:625px}.datepicker-container.modal-content{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}.datepicker-date-display{-webkit-box-flex:0;-webkit-flex:0 1 270px;-ms-flex:0 1 270px;flex:0 1 270px}.datepicker-controls,.datepicker-table,.datepicker-footer{width:320px}.datepicker-day-button{line-height:44px}}.timepicker-modal{max-width:325px;max-height:none}.timepicker-container.modal-content{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:0}.text-primary{color:#fff}.timepicker-digital-display{-webkit-box-flex:1;-webkit-flex:1 auto;-ms-flex:1 auto;flex:1 auto;background-color:#26a69a;padding:10px;font-weight:300}.timepicker-text-container{font-size:4rem;font-weight:bold;text-align:center;color:rgba(255,255,255,0.6);font-weight:400;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.timepicker-span-hours,.timepicker-span-minutes,.timepicker-span-am-pm div{cursor:pointer}.timepicker-span-hours{margin-right:3px}.timepicker-span-minutes{margin-left:3px}.timepicker-display-am-pm{font-size:1.3rem;position:absolute;right:1rem;bottom:1rem;font-weight:400}.timepicker-analog-display{-webkit-box-flex:2.5;-webkit-flex:2.5 auto;-ms-flex:2.5 auto;flex:2.5 auto}.timepicker-plate{background-color:#eee;border-radius:50%;width:270px;height:270px;overflow:visible;position:relative;margin:auto;margin-top:25px;margin-bottom:5px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.timepicker-canvas,.timepicker-dial{position:absolute;left:0;right:0;top:0;bottom:0}.timepicker-minutes{visibility:hidden}.timepicker-tick{border-radius:50%;color:rgba(0,0,0,0.87);line-height:40px;text-align:center;width:40px;height:40px;position:absolute;cursor:pointer;font-size:15px}.timepicker-tick.active,.timepicker-tick:hover{background-color:rgba(38,166,154,0.25)}.timepicker-dial{-webkit-transition:opacity 350ms, -webkit-transform 350ms;transition:opacity 350ms, -webkit-transform 350ms;transition:transform 350ms, opacity 350ms;transition:transform 350ms, opacity 350ms, -webkit-transform 350ms}.timepicker-dial-out{opacity:0}.timepicker-dial-out.timepicker-hours{-webkit-transform:scale(1.1, 1.1);transform:scale(1.1, 1.1)}.timepicker-dial-out.timepicker-minutes{-webkit-transform:scale(0.8, 0.8);transform:scale(0.8, 0.8)}.timepicker-canvas{-webkit-transition:opacity 175ms;transition:opacity 175ms}.timepicker-canvas line{stroke:#26a69a;stroke-width:4;stroke-linecap:round}.timepicker-canvas-out{opacity:0.25}.timepicker-canvas-bearing{stroke:none;fill:#26a69a}.timepicker-canvas-bg{stroke:none;fill:#26a69a}.timepicker-footer{margin:0 auto;padding:5px 1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.timepicker-clear{color:#F44336}.timepicker-close{color:#26a69a}.timepicker-clear,.timepicker-close{padding:0 20px}@media only screen and (min-width: 601px){.timepicker-modal{max-width:600px}.timepicker-container.modal-content{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}.timepicker-text-container{top:32%}.timepicker-display-am-pm{position:relative;right:auto;bottom:auto;text-align:center;margin-top:1.2rem}}
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Autonomous Vehicle" tags="" position="1183,215" size="100,100">&lt;h1&gt;What is an autonomous vehicle?&lt;/h1&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;An autonomous vehicle is a type of vehicle that doesn’t require a person behind the wheel. These types of vehicles are also referred to as self-driving cars. They can drive on their own, are smart enough to know when to stop at a red light, pass other cars safely, and watch out for pedestrians. People who are unable to drive themselves have begun discussing the possibility of buying one of these vehicles for themselves. An important feature of these vehicles is that you can go anywhere without having to be driven by someone else. All you have to do is get into the vehicle, tell it where you want to go, and it takes you to your destination. 
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1" name="Self-driving vehicles" tags="" position="1183,215" size="100,100">&lt;h1&gt;What are self-driving vehicles?&lt;/h1&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;A Self-driving vehicle is a type of vehicle that doesn’t require a person behind the wheel. These types of vehicles are also referred to as Autonomous Vehicles. They can drive on their own, are smart enough to know when to stop at a red light, pass other cars safely, and watch out for pedestrians. People who are unable to drive themselves have begun discussing the possibility of buying one of these vehicles for themselves. An important feature of these vehicles is that you can go anywhere without having to be driven by someone else. All you have to do is get into the vehicle, tell it where you want to go, and it takes you to your destination. 
 &lt;/p&gt;
 
 [[Next Page|Ride Easy Intro]]</tw-passagedata><tw-passagedata pid="2" name="Ride Easy Intro" tags="" position="1185,363" size="100,100">&lt;h1&gt;Introduction to RideEasy&lt;/h1&gt;
 
-&lt;p style=&quot;text-align: justify;&quot;&gt;RideEasy, a new company in South Carolina, just announced the launch of a new ride-sharing service using self-driving vehicles. This new service works much like Uber and Lyft: you place a request for a ride through their smartphone app, schedule your ride, enter your starting and end destinations, and it will come to pick you up and take you where you want to go. The company provides assurance that it is usable by anyone, including people who have varying forms of disabilities.
+&lt;p style=&quot;text-align: justify;&quot;&gt;RideEasy, a new company in South Carolina, just announced the launch of a new ride-sharing service using self-driving vehicles. This new service works much like Uber and Lyft. You can request a ride through either the web or smartphone application, schedule your ride, enter your startand end locations, and it will come to pick you up and take you where you want to go. The company provides assurance that it is usable by anyone, including people with disabilities.
 &lt;/p&gt;
 
 The first step of the process would be to create an account in order to sign in to the application.
@@ -283,7 +289,8 @@ $TurnonMusic
 $CheckLocation
 $CheckTraffic
 $CheckWeather
-$AddAStop</tw-passagedata><tw-passagedata pid="4" name="Ride Home Screen" tags="" position="932,684" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+$AddAStop</tw-passagedata><tw-passagedata pid="4" name="Ride Home Screen" tags="" position="932,684" size="100,100">
+&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s6&quot;&gt;	
@@ -361,7 +368,7 @@ Once you select your car type and entered your thoughts about the vehicle, click
 	  [[Next|Preferred Route]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Preferred Route" tags="" position="946,1268.3333333333333" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Preferred Route" tags="" position="946,1268" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s6&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/mobile%20app/mobile_route.png&quot; alt=&quot;A smartphone displaying a map of your current location. There is a blue dot that represents your specific location on the map, and a line that connects your pickup location to your destination. There are other lines that represent alternate routes to the destination. The bottom of the screen displays options for you to select your preferred route, and a summary of your trip.&quot; border=&quot;0&quot; height=1000 width=500 &gt;
@@ -427,6 +434,9 @@ How would you rate the ride booking process?
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;5&quot; &gt;&gt; Excellent &lt;/label&gt;
 
+Could you tell us the reason why you gave the rating you indicated above?
+&lt;&lt;textbox &quot;$ReasonForRideBookingProcessRating&quot; &quot;&quot;&gt;&gt;
+
 What were the things you liked about the ride booking process, and why?
 &lt;&lt;textbox &quot;$LikedAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
 
@@ -474,11 +484,11 @@ Saying “Your vehicle has arrived at your pickup location”. It also gives mor
 
 Once you reach the vehicle the app says “You are at the vehicle. The vehicle will take over communication at the time. Enjoy your ride”
 
-[A voice is heard coming from the vehicle’s external Human Machine Interface]
+[A voice is heard coming from the vehicle’s external user interface)]
 
-eHMI: This is RideEasy Vehicle No. 123. I’m a Toyota Camry
+External interface: This is RideEasy Vehicle No. 123. I’m a Toyota Camry
 
-eHMI: Please verify you are the rider
+External interface: Please verify you are the rider
 &lt;/p&gt;
 How would you like to verify your identity?
 Choose verification type: 
@@ -506,6 +516,11 @@ How would you  rate your interaction with the vehicle and the methods offered fo
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;3&quot; &gt;&gt; Good &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;5&quot; &gt;&gt; Excellent &lt;/label&gt;
+
+
+Could you tell us the reason why you gave the rating you indicated above?
+&lt;&lt;textbox &quot;$ReasonForRatingforInteractionWithVehicleOnArrivalToPickupLocation&quot; &quot;&quot;&gt;&gt;
+
 
 What did you like about the process of verification and entering into the vehicle?
 &lt;&lt;textbox &quot;$LikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
@@ -557,7 +572,7 @@ Command Options:
 
 “Hey RideEasy, add a stop.”
 
-The iHMI says “Confirmed. Preparing to add a stop. Where would you like to stop?”
+The infotainment system says “Confirmed. Preparing to add a stop. Where would you like to stop?”
 
 Please enter the name of your stop.
 &lt;&lt;textbox &quot;$NameOfStop&quot; &quot;&quot;&gt;&gt;
@@ -567,7 +582,7 @@ Please enter the name of your stop.
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="17" name="Situational Awareness" tags="" position="1420,2460" size="100,100">&lt;h2&gt; Situational Awareness &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 
-In the first few minutes of your trip, you suddenly hear the iHMI say, &quot;We are now passing a CVS on the right.&quot;
+In the first few minutes of your trip, you suddenly hear the infotainment system say, &quot;We are now passing a CVS on the right.&quot;
 
 You realize that the vehicle is informing you of your surroundings so that you are aware of your location throughout the trip.
 
@@ -605,48 +620,48 @@ The iHMI says “Confirmed. The current forecast at your destination in Greenvil
 
 &lt;/p&gt;
 [[Try Another Command|Command Choices]]
-[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="22" name="Closest or Address" tags="" position="675,2847" size="100,100">&lt;h2&gt; Closest Stop or a Specific Address? &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;The IHMI says “Confirmed. Do you wish to select a specific $NameOfStop or just the closest?”
+[[Continue|Scene 8]]</tw-passagedata><tw-passagedata pid="22" name="Closest or Address" tags="" position="675,2846" size="100,100">&lt;h2&gt; Closest Stop or a Specific Address? &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says “Confirmed. Do you wish to select a specific $NameOfStop or just the closest?”
 
 [[Closest location|Confirmation][$ChoiceForAddingAStopAddress to &quot;Closest Location&quot;]]
 [[Enter address|Stop Address][$ChoiceForAddingAStopAddress to &quot;Enter New Address&quot;]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="23" name="Stop Address" tags="" position="673,2989" size="100,100">&lt;h2&gt; Entering Stop Address &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;The iHMI says &quot;Please enter the address of the new stop.&quot;
+&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says &quot;Please enter the address of the new stop.&quot;
 
 Please enter the address for your stop.
 &lt;&lt;textbox &quot;$stopAdd&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Confirmation]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="24" name="Confirmation" tags="" position="899,3028" size="100,100">&lt;h2&gt; Confirmation of Stop &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;The iHMI says, “Confirmed. I have found this $stop. It is 10 minutes away. Adding this stop to your trip will increase your ride cost from $7.63 to $12.72. Do you agree with these changes?”
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="24" name="Confirmation" tags="" position="899,3026" size="100,100">&lt;h2&gt; Confirmation of Stop &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says, “Confirmed. I have found this &lt;&lt; print $NameOfStop&gt;&gt;. It is 10 minutes away. Adding this stop to your trip will increase your ride cost from $7.63 to $12.72. Do you agree with these changes?”
 
 [[Yes, I agree.|Stop is Added]]
 [[No, I don&#39;t agree.|Adding A Stop]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="25" name="Stop is Added" tags="" position="673,3146" size="100,100">&lt;h2&gt; Stop is Confirmed &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;The iHMI says “Confirmed. The route has been changed to include a stop at $stop. Your new ride cost is $12.72, and the estimated time of arrival at your stop is 12:20pm. 
+&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says “Confirmed. The route has been changed to include a stop at $stop. Your new ride cost is $12.72, and the estimated time of arrival at your stop is 12:20pm. 
 
 [[Next|Nearing Stop]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="26" name="Nearing Stop" tags="" position="673,3317" size="100,100">&lt;h2&gt; Nearing your Stop &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 
-The iHMI says “You will arrive at your destination in one minute.”
+The infotainment system says “You will arrive at your destination in one minute.”
 
-The iHMI says “Upon arrival, you will be dropped off at the best location possible. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Then the vehicle will park in the parking lot. When you are ready to be picked up again, you can use the application to summon the vehicle.”
+The infotainment system says “Upon arrival, you will be dropped off at the best location possible. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Then the vehicle will park in the parking lot. When you are ready to be picked up again, you can use the application to summon the vehicle.”
 
 [[Next|Arrived at Stop]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="27" name="Arrived at Stop" tags="" position="674,3492" size="100,100">&lt;h2&gt; Arrived at Stop &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt;
 
-The iHMI says “You have arrived at your stop. The vehicle has stopped in front of your destination with your door facing the entrance. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Then the vehicle will park in the parking lot. When you are ready to be picked up again, you can use the application to summon the vehicle. Please wait while the vehicle is lowered, and your door is opened.”
+The infotainment system says “You have arrived at your stop. The vehicle has stopped in front of your destination with your door facing the entrance. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Then the vehicle will park in the parking lot. When you are ready to be picked up again, you can use the application to summon the vehicle. Please wait while the vehicle is lowered, and your door is opened.”
 
 [Vehicle is lowered and User’s door opens]
 
-The iHMI says “You may now exit the vehicle.” 
+The infotainment system says “You may now exit the vehicle.” 
 
 [You exit the vehicle]
 
@@ -713,49 +728,49 @@ Here we go!
 [[Next|Remembering You]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="32" name="Re-entering the Vehicle" tags="" position="705,4383" size="100,100">&lt;h2&gt; Re-entering the Vehicle &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; The eHMI says “Welcome back, $name. Please wait while the vehicle lowers to the ground and opens your door.”
+&lt;p style=&quot;text-align: justify;&quot;&gt; The external interface of the vehicle says “Welcome back. Please wait while the vehicle lowers to the ground and opens your door.”
 
 [Vehicle lowers height to ground level]
 
 [Front passenger door automatically opens]
 
-The eHMI says “You may now enter the vehicle. A beeping noise will help you to find the entrance.”
+The external interface of the vehicle says “You may now enter the vehicle. A beeping noise will help you to find the entrance.”
 
 [You enter the vehicle and sits down]
 
-The iHMI says “Whenever you are ready, you can state “ready” to proceed with the trip. Please make sure to fasten your seatbelt first.” 
+The infotainment system says “Whenever you are ready, you can state “ready” to proceed with the trip. Please make sure to fasten your seatbelt first.” 
 
 [[Ready|Resuming Route]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="33" name="Resuming Route" tags="" position="707,4576.333333333333" size="100,100">&lt;h2&gt; Resuming Your Journey &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; The iHMI says “Beginning route to your final destination. Your destination is 30 minutes away, and the estimated time of arrival is now 1:07pm.”
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="33" name="Resuming Route" tags="" position="707,4576" size="100,100">&lt;h2&gt; Resuming Your Journey &lt;/h2&gt;
+&lt;p style=&quot;text-align: justify;&quot;&gt; The infotainment system says “Beginning route to your final destination. Your destination is 30 minutes away, and the estimated time of arrival is now 1:07pm.”
 
 
 [[Next|Scene 8]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="34" name="Scene 8" tags="" position="1219,4247" size="100,100">&lt;h2&gt; Getting Close to Destination &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="34" name="Scene 8" tags="" position="1220,4247" size="100,100">&lt;h2&gt; Getting Close to Destination &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; [Car getting closer to destination]
 
-The iHMI says “You will arrive at your destination in one minute.”
+The infotainment system says “You will arrive at your destination in one minute.”
 
-The iHMI says “Upon arrival, you will be dropped off in the best location possible. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Once you reach the entrance and give the command, the vehicle will depart.” 
+The infotainment system says “Upon arrival, you will be dropped off in the best location possible. Once you exit the vehicle, the mobile application can help to guide you towards the entrance of your destination. Once you reach the entrance and give the command, the vehicle will depart.” 
 
 [Car approaches destination]
 
-iHMI: You have arrived at your destination. Please wait while the vehicle parks in the dropoff location. 
+Infotainment system: You have arrived at your destination. Please wait while the vehicle parks in the dropoff location. 
 
 [[Next|Scene 9]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="35" name="Scene 9" tags="" position="812,4965" size="100,100">&lt;h2&gt; Final Drop Off &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; [Vehicle parks in a drop off location]
 
-iHMI: You have arrived at your destination. The vehicle has stopped in front of your destination with your door facing the entrance. Upon exiting, you will be on a sidewalk, and the mobile application can help guide you toward the entrance of your destination. Once you reach the entrance and give the command, the vehicle will depart. 
+Infotainment system: You have arrived at your destination. The vehicle has stopped in front of your destination with your door facing the entrance. Upon exiting, you will be on a sidewalk, and the mobile application can help guide you toward the entrance of your destination. Once you reach the entrance and give the command, the vehicle will depart. 
 
-iHMI: Please wait while the vehicle is lowered, and your door is opened.
+Infotainment system: Please wait while the vehicle is lowered, and your door is opened.
 
 [Vehicle is lowered and your door opens]
 
-iHMI: You may now exit the vehicle. 
+Infotainment system: You may now exit the vehicle. 
 
 [You exit the vehicle]
 
@@ -795,7 +810,7 @@ The application says &quot;You are at the entrance of your destination.&quot;
 
 [[Next|Dismiss the Vehicle]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="38" name="Dismiss the Vehicle" tags="" position="727.3333333333334,5452" size="100,100">&lt;h2&gt; Dismissing the Vehicle &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="38" name="Dismiss the Vehicle" tags="" position="727,5452" size="100,100">&lt;h2&gt; Dismissing the Vehicle &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 Once you have made it to the entrance, you are ready for the vehicle to leave. 
 
@@ -816,6 +831,9 @@ Choose Rating:
 &lt;label&gt;&lt;&lt;radiobutton &quot;$OverAllRating&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$OverAllRating&quot; &quot;5&quot; &gt;&gt; Exceleent &lt;/label&gt;
 
+Could you tell us the reason why you gave the rating you indicated above?
+&lt;&lt;textbox &quot;$ReasonForOverAllRating&quot; &quot;&quot;&gt;&gt;
+
 What were the things you liked about the overall process?
 &lt;&lt;textbox &quot;$LikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
 
@@ -826,7 +844,7 @@ What improvements you would like to see in the overall process and why?
 &lt;&lt;textbox &quot;$ImprovementsAboutDislikedAboutTheVerificationAndIngressProcess&quot; &quot;&quot;&gt;&gt;
 
 [[Next|Demographic Info]]
-</tw-passagedata><tw-passagedata pid="40" name="The End" tags="" position="727,6200" size="100,100">&lt;h2&gt; The End &lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="40" name="The End" tags="" position="727,6199" size="100,100">&lt;h2&gt; The End &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; The application says “Confirmed. Thank you for choosing RideEasy for your travel needs. We look forward to driving you again in the future. Have a great day!”
 
 
@@ -841,6 +859,21 @@ var sendData = JSON.stringify({
 &quot;ReasonForChoiceOfSignUp&quot;: State.getVar(&quot;$ReasonForChoiceOfSignUp&quot;),
 &quot;ChoiceForRideBooking&quot;: State.getVar(&quot;$ChoiceForRideBooking&quot;),
 &quot;ReasonForChoiceOfRideBooking&quot;: State.getVar(&quot;$ReasonForChoiceOfRideBooking&quot;),
+&quot;TextContrast&quot;: State.getVar(&quot;$TextContrast&quot;),
+&quot;TextSize&quot;: State.getVar(&quot;$TextSize&quot;),
+&quot;Volume&quot;: State.getVar(&quot;$Volume&quot;),
+&quot;subtitles&quot;: State.getVar(&quot;$subtitles&quot;),
+&quot;VoiceControl&quot;: State.getVar(&quot;$VoiceControl&quot;),
+&quot;ScreenReader&quot;: State.getVar(&quot;$ScreenReader&quot;),
+&quot;Language&quot;: State.getVar(&quot;$Language&quot;),
+&quot;DrivingSpeed&quot;: State.getVar(&quot;$DrivingSpeed&quot;),
+&quot;BrakingType&quot;: State.getVar(&quot;$BrakingType&quot;),
+&quot;Overtaking&quot;: State.getVar(&quot;$Overtaking&quot;),
+&quot;VisualImpairedAssist&quot;: State.getVar(&quot;$VisualImpairedAssist&quot;),
+&quot;EmergencyPriority&quot;: State.getVar(&quot;$EmergencyPriority&quot;),
+&quot;Notifications&quot;: State.getVar(&quot;$Notifications&quot;),
+&quot;LiveLocation&quot;: State.getVar(&quot;$LiveLocation&quot;),
+&quot;ShareGPSCareTaker&quot;: State.getVar(&quot;$ShareGPSCareTaker&quot;),
 &quot;MethodToEnterPickupLocation&quot;: State.getVar(&quot;$MethodToEnterPickupLocation&quot;),
 &quot;DestinationMethod&quot;: State.getVar(&quot;$DestinationMethod&quot;),
 &quot;CarType&quot;: State.getVar(&quot;$CarType&quot;),
@@ -916,7 +949,11 @@ var sendData = JSON.stringify({
 &quot;OtherImpairments&quot;: State.getVar(&quot;$OtherImpairments&quot;),
 &quot;lowvision&quot;: State.getVar(&quot;$lowvision&quot;),
 &quot;blindstatus&quot;: State.getVar(&quot;$blindstatus&quot;),
-&quot;visualacuity&quot;: State.getVar(&quot;$visualacuity&quot;)
+&quot;visualacuity&quot;: State.getVar(&quot;$visualacuity&quot;),
+&quot;ReasonForRideBookingProcessRating&quot;: State.getVar(&quot;$ReasonForRideBookingProcessRating&quot;),
+&quot;ReasonForOverAllRating&quot;: State.getVar(&quot;$ReasonForOverAllRating&quot;),
+&quot;ReasonForRatingforInteractionWithVehicleOnArrivalToPickupLocation&quot;: State.getVar(&quot;$ReasonForRatingforInteractionWithVehicleOnArrivalToPickupLocation&quot;)
+
 });
  
 $.ajax({
@@ -925,13 +962,13 @@ method:&quot;POST&quot;,
 dataType: &quot;json&quot;,
 data: sendData
 }).done(function() {});
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Selected Application" tags="" position="1069,534" size="100,100">&lt;h2&gt; Mobile Application &lt;/h2&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Selected Application" tags="" position="1069,555" size="100,100">&lt;h2&gt; Mobile Application &lt;/h2&gt;
 
 &lt;p style=&quot;text-align: justify;&quot;&gt; You decided to use the mobile application in order to book your ride. Why did you choose this option?
 
 &lt;&lt;textbox &quot;$ReasonForChoiceOfRideBooking&quot; &quot;&quot;&gt;&gt;
 
-[[Next|Ride Home Screen]]
+[[Next|Application Preferences]]
 
 &lt;/p&gt;
 
@@ -940,7 +977,7 @@ data: sendData
 
 &lt;&lt;textbox &quot;$ReasonForChoiceOfRideBooking&quot; &quot;&quot;&gt;&gt;
 
-[[Next|Web Ride Home Screen]]
+[[Next|Web Preferences]]
 
 &lt;/p&gt;
 </tw-passagedata><tw-passagedata pid="43" name="Interior Description" tags="" position="1011,2441" size="100,100">&lt;h2&gt; Description of Interior&lt;/h2&gt;
@@ -952,7 +989,7 @@ data: sendData
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
 	  You enter the vehicle and take your seat.
 
-Inside the vehicle, there are four seats, all facing the front of the vehicle. The vehicle has a high ceiling, and extra leg room. There are wheelchair positions, in-cabin hooks for walking aids, and self-securing wheelchair restraints. There are also infotainment screens for each passenger seat also reffered to IHMI (Internal Human-Machine Interface).
+Inside the vehicle, there are four seats, all facing the front of the vehicle. The vehicle has a high ceiling, and extra leg room. There are wheelchair positions, in-cabin hooks for walking aids, and self-securing wheelchair restraints. There are also infotainment system screens for each passenger seat to keep users informed and also provide them various in-transit options.
 
 &lt;/p&gt;
 
@@ -975,7 +1012,7 @@ Inside the vehicle, there are four seats, all facing the front of the vehicle. T
 [[Next|Car has arrived]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="iHMI Description and Picture" tags="" position="871,2599" size="100,100">&lt;h2&gt; Picture of iHMI&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="45" name="iHMI Description and Picture" tags="" position="871,2599" size="100,100">&lt;h2&gt; Picture of infotainment system&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/HMI.png&quot; alt=&quot;A picture of the in-vehicle infotainment screen. The left side shows a picture of the vehicle, with trip directions and options to alter the trip. The right side shows a map of the route, with command options for the vehicle.&quot; border=&quot;0&quot; height=600 width=1000&gt;
@@ -992,7 +1029,7 @@ Inside the vehicle, there are four seats, all facing the front of the vehicle. T
 
 &lt;/p&gt;
 
-What method would you prefer to interact with the IHMI?
+What method would you prefer to interact with the infotainment system?
 
 &lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;Voice&quot;&gt;&gt; Voice&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$iHMIinteractionPref&quot; &quot;Mobile App&quot;&gt;&gt; Through mobile application&lt;/label&gt;
@@ -1004,7 +1041,7 @@ You can use this text box to enter another method.
 Why did you select this interaction method?
 &lt;&lt;textbox &quot;$ReasonForIHMIInteractionPreference&quot; &quot;&quot;&gt;&gt;
 
-How would you prefer the iHMI to communicate back to you?
+How would you like the infotainment system to communicate back to you?
  
 &lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;phonenotification&quot;&gt;&gt; Phone Notification&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$communicationbackfromIHMIPref&quot; &quot;Verbal Announcement&quot;&gt;&gt; Voice announcement&lt;/label&gt;
@@ -1031,7 +1068,7 @@ The iHMI says “Confirmed. Turning on music and switching to station 98.5 FM”
 &lt;/p&gt;
 What method would you prefer to use when navigating to the entrance of your destination?
 
-&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodPrefForNavigatingToDestinationEntrance&quot; &quot;IHMI&quot;&gt;&gt; The IHMI&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$MethodPrefForNavigatingToDestinationEntrance&quot; &quot;IHMI&quot;&gt;&gt; The infotainment system&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$MethodPrefForNavigatingToDestinationEntrance&quot; &quot;Mobile App&quot; &gt;&gt; Through mobile application&lt;/label&gt;
 
 You can use this text box to enter another method.
@@ -1050,7 +1087,7 @@ Why/why not?
 
 [[Next|Re-entering the Vehicle]]
 
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="50" name="Dismiss Details" tags="" position="922,5555" size="100,100">&lt;h2&gt; Dismissing The Vehicle Preferences &lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="50" name="Dismiss Details" tags="" position="921,5555" size="100,100">&lt;h2&gt; Dismissing The Vehicle Preferences &lt;/h2&gt;
 &lt;p style=&quot;text-align: justify;&quot;&gt; 
 &lt;/p&gt;
 What method would you prefer to use when dismissing the vehicle?
@@ -1113,7 +1150,7 @@ You fasten your seatbelt and say “Ready”. The trip begins.
 	  [[Request Ride|Web Pickup Location]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Web Pickup Location" tags="" position="1281,828.3333333333334" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="54" name="Web Pickup Location" tags="" position="1281,828" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_pickup.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen gives you options to enter your pickup location. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map.&quot; border=&quot;0&quot; height=500 width=1000&gt;
@@ -1149,7 +1186,7 @@ Once you enter your destination, click the Next button to continue.
 	  [[Next|Web Car Type]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Web Car Type" tags="" position="1281,1130" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Web Car Type" tags="" position="1281,1129" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_cartype.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your car type, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=500 width=1000&gt;
@@ -1192,7 +1229,7 @@ Once you select your route, click Next to continue.
 	  [[Next|Web Pay for ride]]
 	  
 	  &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="Web Pay for ride" tags="" position="1281,1428.3333333333333" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="Web Pay for ride" tags="" position="1281,1428" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s12&quot;&gt;	
 	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/web%20app/web_payment.png&quot; alt=&quot;A website that allows you to book a ride. The top of the screen gives you options to choose from. The left side of the screen displays options for you to select your payment type, and a summary of your trip. The right side of the screen is displaying a map of your current location. There is a dot that represents your specific location on the map, and a line that connects your pickup location to your destination.&quot; border=&quot;0&quot; height=500 width=1000&gt;
@@ -1243,6 +1280,9 @@ How would you rate the ride booking process?
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;3&quot; &gt;&gt; Good &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;4&quot; &gt;&gt; Great &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$RideBookingProcessRating&quot; &quot;5&quot; &gt;&gt; Excellent &lt;/label&gt;
+
+Could you tell us the reason why you gave the rating you indicated above?
+&lt;&lt;textbox &quot;$ReasonForRideBookingProcessRating&quot; &quot;&quot;&gt;&gt;
 
 What were the things you liked about the ride booking process, and why?
 &lt;&lt;textbox &quot;$LikedAboutTheRideBookingProcess&quot; &quot;&quot;&gt;&gt;
@@ -1335,13 +1375,12 @@ Do you identify as someone with a disability?
 
 What type of disability do you identify with (select all that apply)?
 Choices:
+&lt;label&gt;&lt;&lt;checkbox &quot;$PrefernottoidentifyImpairments&quot; No Yes&gt;&gt;Prefer not to identify impairments&lt;/label&gt;
 &lt;label&gt;&lt;&lt;checkbox &quot;$HearingImpairment&quot; No Yes&gt;&gt; Hearing impairment&lt;/label&gt;
 &lt;label&gt;&lt;&lt;checkbox &quot;$VisualImpairment&quot; No Yes&gt;&gt; Visual impairment&lt;/label&gt;
 &lt;label&gt;&lt;&lt;checkbox &quot;$SpeechImpairment&quot; No Yes&gt;&gt; Speech impairment&lt;/label&gt;
 &lt;label&gt;&lt;&lt;checkbox &quot;$MobilityImpairment&quot; No Yes&gt;&gt; Mobility impairment&lt;/label&gt;
 &lt;label&gt;&lt;&lt;checkbox &quot;$CognitiveImpairment&quot; No Yes&gt;&gt; Cognitive impairment&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$NoImpairments&quot; No Yes&gt;&gt; No impairment&lt;/label&gt;
-&lt;label&gt;&lt;&lt;checkbox &quot;$PrefernottoidentifyImpairments&quot; No Yes&gt;&gt;Prefer not to identify impairments&lt;/label&gt;
 
 Other impairments: 
 &lt;&lt;textbox &quot;$OtherImpairments&quot; &quot;&quot;&gt;&gt;
@@ -1372,7 +1411,187 @@ If known, what is the visual acuity of your better seeing eye with conventional 
 &lt;&lt;textbox &quot;$visualacuity&quot; &quot;&quot;&gt;&gt;
 
 [[Next|The End]]
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="65" name="Application Preferences" tags="" position="870,518" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;h2&gt; Setup Account&lt;/h2&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col s11 l5&quot;&gt;	
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference1.png&quot; alt=&quot;Ride-Screen-Homepage-Web&quot; border=&quot;0&quot; height=auto width=100% &gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col s11 l5 offset-l1&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; Before you begin your ride booking process we would like you to setup preferences for the app and your self-driving car experience
+&lt;/p&gt;
+Choose the contrast of the text:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
+
+Choose the size of the text:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;small&quot;&gt;&gt; Small&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;large&quot;&gt;&gt; Large&lt;/label&gt;
+
+Choose your preferred volume:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
+
+Turn On/Off Subtitles:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Turn On/Off Voice Control:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Turn On/Off Screen Reader:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Choose your preferred Language:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;English&quot;&gt;&gt; English&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Spanish&quot;&gt;&gt; Spanish&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Others&quot;&gt;&gt; Others&lt;/label&gt;
+
+	  
+	  &lt;/div&gt;
+	  &lt;div class=&quot;col s11 l5&quot;&gt;	
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference2.png&quot; alt=&quot;Ride-Screen-Homepage-Web&quot; border=&quot;0&quot; height=auto width=100% &gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col s11 l6 offset-l1&quot;&gt;
+
+Choose the driving speed of the car:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Fast&quot;&gt;&gt; Fast&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Slow&quot;&gt;&gt; Slow&lt;/label&gt;
+
+Choose Braking Type: 
+&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Aggressive&quot;&gt;&gt; Aggressive&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Relaxed&quot;&gt;&gt; Relaxed&lt;/label&gt;
+
+Choose your overtaking preferences:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Actively overtake&quot;&gt;&gt; Actively overtake&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Avoid overtaking except when it is safe to do so&quot;&gt;&gt; Avoid overtaking except when it is safe to do so&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Never overtake&quot;&gt;&gt; Never overtake&lt;/label&gt;
+
+Turn On/Off Visual Impaired Assist:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Vehicle prioritize going to emergency locations such as hospitals before reaching my destination in the case of an emergency
+&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Receive Notifications of special rates and discounts on my phone
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Share live location in case of an accident
+&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Share trips details and Live GPS of all trips with Caretaker
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+
+After selecting your preferences, click next to begin booking a ride
+
+	  [[Next|Ride Home Screen]]
+	  
+	  &lt;/div&gt;
+	 &lt;/div&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Web Preferences" tags="" position="1397,680" size="100,100">&lt;h2&gt; Setup Account&lt;/h2&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col s12&quot;&gt;	
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference1.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=400 width=800 &gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col s12&quot;&gt;
+	  &lt;p style=&quot;text-align: justify;&quot;&gt; Before you begin your ride booking process we would like you to setup preferences for the app and your self-driving car experience
+&lt;/p&gt;
+Choose the contrast of the text:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextContrast&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
+
+Choose the size of the text:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;small&quot;&gt;&gt; Small&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$TextSize&quot; &quot;large&quot;&gt;&gt; Large&lt;/label&gt;
+
+Choose your preferred volume:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;low&quot;&gt;&gt; Low&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Volume&quot; &quot;high&quot;&gt;&gt; High&lt;/label&gt;
+
+Turn On/Off Subtitles:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$subtitles&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Turn On/Off Voice Control:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VoiceControl&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Turn On/Off Screen Reader:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ScreenReader&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Choose your preferred Language:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;English&quot; checked&gt;&gt; English&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Spanish&quot;&gt;&gt; Spanish&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Language&quot; &quot;Others&quot;&gt;&gt; Others&lt;/label&gt;
+
+	  
+	  &lt;/div&gt;
+	  &lt;div class=&quot;col s12&quot;&gt;	
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference2.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the second half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=400 width=800 &gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col s12&quot;&gt;
+
+
+Choose the driving speed of the car:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Fast&quot;&gt;&gt; Fast&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Medium&quot;&gt;&gt; Medium&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$DrivingSpeed&quot; &quot;Slow&quot;&gt;&gt; Slow&lt;/label&gt;
+
+Choose Braking Type: 
+&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Aggressive&quot;&gt;&gt; Aggressive&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$BrakingType&quot; &quot;Relaxed&quot;&gt;&gt; Relaxed&lt;/label&gt;
+
+Choose your overtaking preferences:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Actively overtake&quot;&gt;&gt; Actively overtake&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Avoid overtaking except when it is safe to do so&quot;&gt;&gt; Avoid overtaking except when it is safe to do so&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Overtaking&quot; &quot;Never overtake&quot;&gt;&gt; Never overtake&lt;/label&gt;
+
+&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference3.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the third half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=400 width=800 &gt;
+
+Turn On/Off Visual Impaired Assist:
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$VisualImpairedAssist&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Vehicle prioritize going to emergency locations such as hospitals before reaching my destination in the case of an emergency
+&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$EmergencyPriority&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Receive Notifications of special rates and discounts on my phone
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$Notifications&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Share live location in case of an accident
+&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$LiveLocation&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+Share trips details and Live GPS of all trips with Caretaker
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;on&quot;&gt;&gt; On&lt;/label&gt;
+&lt;label&gt;&lt;&lt;radiobutton &quot;$ShareGPSCareTaker&quot; &quot;off&quot;&gt;&gt; Off&lt;/label&gt;
+
+
+After selecting your preferences, click next to begin booking a ride
+
+
+	  [[Next|Web Ride Home Screen]]
+	  
+	  &lt;/div&gt;
+	 &lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&null!==n&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",r="\\s"===e?"\\S":e.replace(/^\[/,"[^"),n="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",a=n.replace("\\-",""),i=function(){return"("+n+"+)\\(([^\\)\\|\\n]+)\\):|"+t+"*("+n+"+)"+t+"*:([^;\\|\\n]+);|"+t+"*((?:[#.]"+n+"+"+t+"*)+);"}();return Object.freeze({space:e,spaceNoTerminator:t,lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:r,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:n,anyLetterStrict:a,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssIdOrClassSigil:"[#.]",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:i,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),r=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),n=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),a=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),i=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),o=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,fileAPI:t,geolocation:r,mutationObserver:n,performance:a,touch:i,transitionEndEvent:o})}(),Visibility=function(){function e(){return a}function t(){return a&&document[a.stateProperty]||"visible"}function r(){return Boolean(a)}function n(){return Boolean(a&&document[a.hiddenProperty])}var a=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return undefined}();return Object.freeze(Object.defineProperties({},{vendor:{get:e},state:{get:t},isEnabled:{value:r},isHidden:{value:n},hiddenProperty:{value:a&&a.hiddenProperty},stateProperty:{value:a&&a.stateProperty},changeEvent:{value:a&&a.changeEvent}}))}(),Fullscreen=function(){function e(e){var t=e||document.documentElement;return t===document.documentElement&&("msRequestFullscreen"===f.requestFn||Browser.isOpera&&Browser.operaVersion<15)&&(t=document.body),t}function t(){return f}function r(){return(f||null)&&document[f.element]}function n(){return Boolean(f&&document[f.isEnabled])}function a(){return Boolean(f&&document[f.element])}function i(t,r){var n=this;if(!f)return Promise.reject(new Error("fullscreen not supported"));var i=e(r);if("function"!=typeof i[f.requestFn])return Promise.reject(new Error("fullscreen not supported"));if(a())return Promise.resolve();if(p())return i[f.requestFn](t);var o=".Fullscreen_requestFullscreen";return new Promise(function(e,r){jQuery(i).off(o).one(""+f.errorEvent+o+" "+f.changeEvent+o,function(t){jQuery(n).off(o),t.type===f.errorEvent?r(new Error("unknown fullscreen request error")):e()}),i[f.requestFn](t)})}function o(){var e=this;if(!f||"function"!=typeof document[f.exitFn])return Promise.reject(new TypeError("fullscreen not supported"));if(!a())return Promise.reject(new TypeError("fullscreen mode not active"));if(p())return document[f.exitFn]();var t=".Fullscreen_exitFullscreen";return new Promise(function(r,n){jQuery(document).off(t).one(""+f.errorEvent+t+" "+f.changeEvent+t,function(a){jQuery(e).off(t),a.type===f.errorEvent?n(new Error("unknown fullscreen exit error")):r()}),document[f.exitFn]()})}function s(e,t){return a()?o():i(e,t)}function u(t,r){if(f){var n=e(r);$(n).on(f.changeEvent,t)}}function l(t,r){if(f){var n=e(r);t?$(n).off(f.changeEvent,t):$(n).off(f.changeEvent)}}function c(t,r){if(f){var n=e(r);$(n).on(f.errorEvent,t)}}function d(t,r){if(f){var n=e(r);t?$(n).off(f.errorEvent,t):$(n).off(f.errorEvent)}}var f=function(){try{return Object.freeze([{isEnabled:"fullscreenEnabled",element:"fullscreenElement",requestFn:"requestFullscreen",exitFn:"exitFullscreen",changeEvent:"fullscreenchange",errorEvent:"fullscreenerror"},{isEnabled:"webkitFullscreenEnabled",element:"webkitFullscreenElement",requestFn:"webkitRequestFullscreen",exitFn:"webkitExitFullscreen",changeEvent:"webkitfullscreenchange",errorEvent:"webkitfullscreenerror"},{isEnabled:"mozFullScreenEnabled",element:"mozFullScreenElement",requestFn:"mozRequestFullScreen",exitFn:"mozCancelFullScreen",changeEvent:"mozfullscreenchange",errorEvent:"mozfullscreenerror"},{isEnabled:"msFullscreenEnabled",element:"msFullscreenElement",requestFn:"msRequestFullscreen",exitFn:"msExitFullscreen",changeEvent:"MSFullscreenChange",errorEvent:"MSFullscreenError"}].find(function(e){return e.isEnabled in document}))}catch(e){}return undefined}(),p=function(){function e(){if(null!==t)return t;if(t=!1,f)try{var e=document.exitFullscreen();e.catch(function(){}),t=e instanceof Promise}catch(e){}return t}var t=null;return e}();return Object.freeze(Object.defineProperties({},{vendor:{get:t},element:{get:r},isEnabled:{value:n},isFullscreen:{value:a},request:{value:i},exit:{value:o},toggle:{value:s},onChange:{value:u},offChange:{value:l},onError:{value:c},offError:{value:d}}))}(),_ref3=function(){function e(e){for(var t=e.cloneNode(!0),r=document.createDocumentFragment(),n=void 0;null!==(n=t.firstChild);){if(n.nodeType===Node.ELEMENT_NODE)switch(n.nodeName.toUpperCase()){case"BR":case"DIV":case"P":r.appendChild(document.createTextNode(" "))}r.appendChild(n)}return r.textContent}function t(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)return e;if(e instanceof String)return String(e);if(e instanceof Number)return Number(e);if(e instanceof Boolean)return Boolean(e);if("function"==typeof e.clone)return e.clone(!0);if(e.nodeType&&"function"==typeof e.cloneNode)return e.cloneNode(!0);var r=void 0;return e instanceof Array?r=new Array(e.length):e instanceof Date?r=new Date(e.getTime()):e instanceof Map?(r=new Map,e.forEach(function(e,n){return r.set(n,t(e))})):e instanceof RegExp?r=new RegExp(e):e instanceof Set?(r=new Set,e.forEach(function(e){return r.add(t(e))})):r=Object.create(Object.getPrototypeOf(e)),Object.keys(e).forEach(function(n){return r[n]=t(e[n])}),r}function r(e){
