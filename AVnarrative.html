@@ -325,7 +325,7 @@ Once you enter your pickup location, click the Next button to continue.
 	  
 	  &lt;/div&gt;
 	 &lt;/div&gt;
-	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Destination" tags="" position="946,973" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
+	 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Destination" tags="" position="945,973" size="100,100">&lt;h2&gt; Booking a Ride&lt;/h2&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s11 l5 offset-s1&quot;&gt;	
@@ -334,7 +334,7 @@ Once you enter your pickup location, click the Next button to continue.
 	&lt;div class=&quot;col s11 l5 offset-l1 offset-s1&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; You must enter your destination in a similar way to how you entered your pickup location.&lt;/p&gt;
 How would you like to enter your destination:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+
 &lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
@@ -354,13 +354,13 @@ Once you enter your destination, click the Next button to continue.
 	&lt;div class=&quot;col s11 l5 offset-l1 offset-s1&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; The next step is for you to choose the type of vehicle you want to ride in. You have three car types to choose from, each listed with their price and the approximate time it will take for the vehicle to reach your pickup location in minutes. There is a standard 4-seater compact car, a luxury car if I want something fancy, and a 7-seater van for large groups. &lt;/p&gt;
 Choose car type: 
-&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Sedan&quot;&gt;&gt; Standard | 5 seater | Compact Car | Economical Pricing 
+&lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Sedan&quot;&gt;&gt; Standard | 5 seater | Compact Car | Economical Pricing &lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Luxury&quot;&gt;&gt; Luxury | 5 Seater | Extra Legroom| Luxury Pricing&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$CarType&quot; &quot;Van&quot;&gt;&gt; 7 Seater | Affordable rides for larger groups | Economical Pricing&lt;/label&gt;
 
 Please answer the following questions of additional features you would like to see in the car?
 
-How many seats would you like the car to have?
+How many seats would you preferred the car to have?
 &lt;&lt;textbox &quot;$PrefferedNoOfSeats&quot; &quot;&quot; &gt;&gt;
 
 Car should be wheelchair accessible?
@@ -501,7 +501,7 @@ Saying “Your vehicle has arrived at your pickup location”. It also gives mor
 
 Once you reach the vehicle the app says “You are at the vehicle. The vehicle will take over communication at the time. Enjoy your ride”
 
-[A voice is heard coming from the vehicle’s external Human Machine Interface (external interface)]
+[A voice is heard coming from the vehicle’s external interface]
 
 External interface: This is RideEasy Vehicle No. 123. I’m a Toyota Camry
 
@@ -652,13 +652,13 @@ Please enter the address for your stop.
 [[Next|Confirmation]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="24" name="Confirmation" tags="" position="899,3028" size="100,100">&lt;h2&gt; Confirmation of Stop &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says, “Confirmed. I have found this &lt;&lt; print $NameOfStop&gt;&gt;. It is 10 minutes away. Adding this stop to your trip will increase your ride cost from $7.63 to $12.72. Do you agree with these changes?”
+&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says, “Confirmed. I have found this $NameOfStop. It is 10 minutes away. Adding this stop to your trip will increase your ride cost from $7.63 to $12.72. Do you agree with these changes?”
 
 [[Yes, I agree.|Stop is Added]]
 [[No, I don&#39;t agree.|Adding A Stop]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="25" name="Stop is Added" tags="" position="673,3146" size="100,100">&lt;h2&gt; Stop is Confirmed &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says “Confirmed. The route has been changed to include a stop at $stop. Your new ride cost is $12.72, and the estimated time of arrival at your stop is 12:20pm. 
+&lt;p style=&quot;text-align: justify;&quot;&gt;The infotainment system says “Confirmed. The route has been changed to include a stop at $NameOfStop. Your new ride cost is $12.72, and the estimated time of arrival at your stop is 12:20pm. 
 
 [[Next|Nearing Stop]]
 
@@ -745,7 +745,7 @@ Here we go!
 [[Next|Remembering You]]
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="32" name="Re-entering the Vehicle" tags="" position="705,4383" size="100,100">&lt;h2&gt; Re-entering the Vehicle &lt;/h2&gt;
-&lt;p style=&quot;text-align: justify;&quot;&gt; The external interface of the vehicle says “Welcome back, $name. Please wait while the vehicle lowers to the ground and opens your door.”
+&lt;p style=&quot;text-align: justify;&quot;&gt; The external interface of the vehicle says “Welcome back, passenger. Please wait while the vehicle lowers to the ground and opens your door.”
 
 [Vehicle lowers height to ground level]
 
@@ -1170,7 +1170,7 @@ Why/why not?
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; 
 
 How would you like to enter your Destination:
-&lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+
 &lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
 &lt;label&gt;&lt;&lt;radiobutton &quot;$ChangingDestinationMethod&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
@@ -1285,7 +1285,7 @@ Once you enter your pickup location, click the Next button to continue.
 	  &lt;div class=&quot;col s12&quot;&gt;
 		&lt;p style=&quot;text-align: justify;&quot;&gt; You must enter your destination in a similar way to how you entered your pickup location.&lt;/p&gt;
   How would you like to enter your destination:
-  &lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Current Location&quot;&gt;&gt; Use my current location&lt;/label&gt;
+
   &lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Map&quot;&gt;&gt; Set location using the map&lt;/label&gt;
   &lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Favorites&quot;&gt;&gt; Choose one from my favorite list&lt;/label&gt;
   &lt;label&gt;&lt;&lt;radiobutton &quot;$DestinationMethod&quot; &quot;Recent Places&quot;&gt;&gt; Choose from one of your recent places&lt;/label&gt;
@@ -1327,7 +1327,7 @@ Choose car type:
 
 Please answer the following questions of additional features you would like to see in the car?
 
-How many seats would you like the car to have?
+How many seats would you preferred the car to have?
 &lt;&lt;textbox &quot;$PrefferedNoOfSeats&quot; &quot;&quot;&gt;&gt;
 
 Car should be wheelchair accessible?
@@ -1639,7 +1639,7 @@ If known, what is the visual acuity of your better seeing eye with conventional 
 &lt;h2&gt; Setup Account&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
 	&lt;div class=&quot;col s11 l5&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference1.png&quot; alt=&quot;Ride-Screen-Homepage-Web&quot; border=&quot;0&quot; height=auto width=100% &gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference1.png&quot; alt=&quot;A mobile application displaying the fifth page of account setup process. There are many preferences listed with options to choose from.&quot;  border=&quot;0&quot; height=auto width=100% &gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s11 l5 offset-l1&quot;&gt;
 	  &lt;p style=&quot;text-align: justify;&quot;&gt; Before you begin your ride booking process we would like you to setup preferences for the app and your self-driving car experience
@@ -1679,7 +1679,7 @@ Choose your preferred Language:
 	  
 	  &lt;/div&gt;
 	  &lt;div class=&quot;col s11 l5&quot;&gt;	
-	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference2.png&quot; alt=&quot;Ride-Screen-Homepage-Web&quot; border=&quot;0&quot; height=auto width=100% &gt;
+	&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_preference2.png&quot; alt=&quot;A mobile application displaying the fifth page of account setup process. This image displays the second portion of the preferences settings page. There are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=auto width=100% &gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;col s11 l6 offset-l1&quot;&gt;
 
@@ -1785,7 +1785,7 @@ Choose your preferred Language:
 	  &lt;/div&gt;
 	 &lt;div class=&quot;hide-on-med-and-down&quot;&gt;
 		&lt;div class=&quot;col l8 offset-l1&quot;&gt;	
-		&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference2.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the second half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=500 width=auto&gt;
+		&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference2.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the second portion of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=500 width=auto&gt;
 		&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;hide-on-med-and-up&quot;&gt;
@@ -1797,7 +1797,7 @@ Choose your preferred Language:
 		&lt;div class=&quot;hide-on-small-only&quot;&gt;
 		&lt;div class=&quot;hide-on-large-only&quot;&gt;
 		&lt;div class=&quot;col m1 offset-s1&quot;&gt;	
-		&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference2.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the second half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=300 width=600&gt;
+		&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference2.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the portion half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=300 width=600&gt;
 		&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;/div&gt;
@@ -1821,12 +1821,12 @@ Choose your overtaking preferences:
 
 &lt;div class=&quot;hide-on-med-and-down&quot;&gt;
 		&lt;div class=&quot;col l8 &quot;&gt;	
-		&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference3.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the third half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=500 width=auto&gt;
+		&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference3.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the third portion of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=500 width=auto&gt;
 		&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;hide-on-med-and-up&quot;&gt;
 		&lt;div class=&quot;col s5 offset-s1&quot;&gt;
-			&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference3.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the third half of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=100 width=200&gt;
+			&lt;img src=&quot;https://earlhuffjr.com/wp-content/uploads/research/adsvehicles/images/rideshare_web_preference3.png&quot; alt=&quot;A webpage displaying the fifth page of account setup process. This image displays the third portion of the preferences settings page. To the left of the screen there are many preferences listed with options to choose from.&quot; border=&quot;0&quot; height=100 width=200&gt;
 		&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;show-on-medium&quot;&gt;
